@@ -1,0 +1,4 @@
+//Usar bucle for para imprimir numeros
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}
