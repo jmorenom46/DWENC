@@ -1,6 +1,6 @@
 class Move{
-    constructor(name,dmg){
-        this.name=name;
+    constructor(move,dmg){
+        this.move=move;
         this.dmg=dmg;
     }
 }
