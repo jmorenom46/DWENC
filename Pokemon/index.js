@@ -29,7 +29,6 @@ const Moves2 = [
   new Move("Ataque aéreo", 60),
 ];
 
-
 let Pokemones = [
   (Pokemon = {
     name: "Sceptile",
@@ -113,4 +112,5 @@ let Pokemones = [
     moves: Moves2.Placaje,
   }),
 ];
-console.log(Moves2);
+
+
