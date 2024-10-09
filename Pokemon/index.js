@@ -113,4 +113,23 @@ let Pokemones = [
   }),
 ];
 
-
+let Pokemones2 = [
+  {
+    name: "Sceptile",
+    type: Tipos.GRASS,
+    chp: 140,
+    mhp: 140,
+    attackStat: 5,
+    deffense: 3,
+    //moves: [Moves2.Placaje, Moves2.PistolaAgua]
+  },
+  {
+    name: "Charmarder",
+    type: Tipos.FIRE,
+    chp: 130,
+    mhp: 130,
+    attackStat: 6,
+    deffense: 2,
+    //moves: Moves2.Placaje,
+  },
+];
