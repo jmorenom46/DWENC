@@ -15,7 +15,21 @@ const Moves = [
   (Move = { move: "Avalancha", dmg: 35 }),
   (Move = { move: "Ataque aéreo", dmg: 60 }),
 ];
-/*
+
+const Moves2 = [
+  new Move("Placaje", 20),
+  new Move("Pistola agua", 60),
+  new Move("Placaje Electrico", 40),
+  new Move("Anillo ígneo", 60),
+  new Move("Alud", 30),
+  new Move("A bocajarro", 50),
+  new Move("Ataque rápido", 20),
+  new Move("Ácido málico", 40),
+  new Move("Avalancha", 35),
+  new Move("Ataque aéreo", 60),
+];
+
+
 let Pokemones = [
   (Pokemon = {
     name: "Sceptile",
@@ -24,7 +38,7 @@ let Pokemones = [
     mhp: 140,
     attackStat: 5,
     deffense: 3,
-    moves: ,
+    moves: [Moves2.Placaje, Moves2.PistolaAgua],
   }),
   (Pokemon = {
     name: "Charmarder",
@@ -33,7 +47,7 @@ let Pokemones = [
     mhp: 130,
     attackStat: 6,
     deffense: 2,
-    moves: [Moves.Move[0], Moves.Move[3]],
+    moves: Moves2.Placaje,
   }),
   (Pokemon = {
     name: "Squirtle",
@@ -42,7 +56,7 @@ let Pokemones = [
     mhp: 120,
     attackStat: 5,
     deffense: 5,
-    moves: [Moves.Move[0], Moves.Move[1]],
+    moves: Moves2.Placaje,
   }),
   (Pokemon = {
     name: "Geodude",
@@ -51,7 +65,7 @@ let Pokemones = [
     mhp: 200,
     attackStat: 2,
     deffense: 7,
-    moves: [Moves.Move[0], Moves.Move[8]],
+    moves: Moves2.Placaje,
   }),
   (Pokemon = {
     name: "Mankey",
@@ -60,7 +74,7 @@ let Pokemones = [
     mhp: 140,
     attackStat: 4,
     deffense: 4,
-    moves: [Moves.Move[0], Moves.Move[5]],
+    moves: Moves2.Placaje,
   }),
   (Pokemon = {
     name: "Meowth",
@@ -69,7 +83,7 @@ let Pokemones = [
     mhp: 150,
     attackStat: 5,
     deffense: 3,
-    moves: [Moves.Move[0], Moves.Move[6]],
+    moves: Moves2.Placaje,
   }),
   (Pokemon = {
     name: "Lapras",
@@ -78,7 +92,7 @@ let Pokemones = [
     mhp: 160,
     attackStat: 4,
     deffense: 5,
-    moves: [Moves.Move[0], Moves.Move[8]],
+    moves: Moves2.Placaje,
   }),
   (Pokemon = {
     name: "Pawmot",
@@ -87,7 +101,7 @@ let Pokemones = [
     mhp: 120,
     attackStat: 6,
     deffense: 2,
-    moves: [Moves.Move[0], Moves.Move[2]],
+    moves: Moves2.Placaje,
   }),
   (Pokemon = {
     name: "Pidgey",
@@ -96,7 +110,7 @@ let Pokemones = [
     mhp: 110,
     attackStat: 7,
     deffense: 4,
-    moves: [Moves.Move[0], Moves.Move[9]],
+    moves: Moves2.Placaje,
   }),
 ];
-console.log(Pokemones);*/
+console.log(Moves2);
