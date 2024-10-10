@@ -131,12 +131,19 @@ let Pokemones = [
 ];
 
 for (let i = 0; i < Pokemones.length; i++) {
-  console.log(Pokemones[i].name);
-  console.log(Pokemones[i].type);
-  console.log(Pokemones[i].chp);
-  console.log(Pokemones[i].mhp);
-  console.log(Pokemones[i].attackStat);
-  console.log(Pokemones[i].deffense);
+  console.log(`Nombre: ${Pokemones[i].name}`);
+  console.log(`Tipo: ${Pokemones[i].type}`);
+  console.log(`Vida actual: ${Pokemones[i].chp}`);
+  console.log(`Vida máxima: ${Pokemones[i].mhp}`);
+  console.log(`Ataque: ${Pokemones[i].attackStat}`);
+  console.log(`Defensa: ${Pokemones[i].deffense}`);
   console.log(Pokemones[i].moves);
   console.log("\n");
+}
+
+let Jugador = Math.floor(Math.random() * Pokemones.length);
+let Oponente = Math.floor(Math.random() * Pokemones.length);
+
+while (vivo) {
+  
 }
