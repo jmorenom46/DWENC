@@ -141,9 +141,5 @@ for (let i = 0; i < Pokemones.length; i++) {
   console.log("\n");
 }
 
-let Jugador = Math.floor(Math.random() * Pokemones.length);
-let Oponente = Math.floor(Math.random() * Pokemones.length);
-
-while (vivo) {
-  
-}
+let PJugador = Math.floor(Math.random() * Pokemones.length);
+let POponente = Math.floor(Math.random() * Pokemones.length);
