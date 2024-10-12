@@ -178,7 +178,7 @@ while (vidaJugador && vidaOponente) {
         console.log(
           `1.- ${PJugador.moves[0].move} | 2.- ${PJugador.moves[1].move}`
         );
-        let movimiento = Number(scanner.question("Elige un movimiento: "));
+        let movimiento = Number(scanner.question("Elige un movimiento: \n"));
         PJugador.attack(movimiento, POponente);
         console.log("\n");
         break;
@@ -196,10 +196,11 @@ while (vidaJugador && vidaOponente) {
       }
     }
     if (POponente.chp > 0) {
-      if (POponente.chp >= POponente.mhp / 2) {
-        turnoOponente = 1;
-      } else if (POponente.chp < POponente.mhp / 2 && healO) {
+      if (healO && POponente.chp < POponente.mhp / 2) {
         turnoOponente = Math.floor(Math.random() * 2) + 1;
+        console.log(healO);
+      } else {
+        turnoOponente = 1;
       }
 
       switch (turnoOponente) {

@@ -17,6 +17,9 @@ class Pokemon {
       let dmg =
         (this.attackStat / oponent.deffense) * this.moves[nmove - 1].dmg * ran;
       let ent = Math.trunc(dmg);
+      console.log(
+        `${this.name} ataca a ${oponent.name} y causa ${ent} puntos de daño`
+      )
       oponent.chp -= ent;
     }
   }
