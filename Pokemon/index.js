@@ -1,6 +1,6 @@
-let Pokemon = require("./Pokemon.js");
-let Tipos = require("./Type.js");
-let Move = require("./Move.js");
+let Pokemon = require("./Pokemon");
+let Tipos = require("./Type");
+let Move = require("./Move");
 const scanner = require("readline-sync");
 
 const Moves = [
@@ -46,7 +46,7 @@ const Moves = [
   },
 ];
 
-let Pokemones = [
+/*let Pokemones = [
   {
     name: "Sceptile",
     type: Tipos.GRASS,
@@ -54,7 +54,7 @@ let Pokemones = [
     mhp: 140,
     attackStat: 5,
     deffense: 3,
-    moves: [Moves[0], Moves[1]],
+    moves: [Moves[0], Moves[7]],
   },
   {
     name: "Charmarder",
@@ -128,18 +128,104 @@ let Pokemones = [
     deffense: 4,
     moves: [Moves[0], Moves[9]],
   },
+];*/
+
+let Pokemons = [
+  new Pokemon("Sceptile", Tipos.GRASS, 140, 140, 5, 3, [Moves[0], Moves[7]]),
+  new Pokemon("Charmarder", Tipos.FIRE, 130, 130, 6, 2, [Moves[0], Moves[3]]),
+  new Pokemon("Squirtle", Tipos.WATER, 120, 120, 5, 5, [Moves[0], Moves[1]]),
+  new Pokemon("Geodude", Tipos.ROCK, 200, 200, 2, 7, [Moves[0], Moves[4]]),
+  new Pokemon("Mankey", Tipos.FIGHTING, 140, 140, 4, 4, [Moves[0], Moves[5]]),
+  new Pokemon("Meowth", Tipos.NORMAL, 150, 150, 5, 3, [Moves[0], Moves[6]]),
+  new Pokemon("Lapras", Tipos.ICE, 160, 160, 4, 5, [Moves[0], Moves[8]]),
+  new Pokemon("Pawmot", Tipos.ELECTRIC, 120, 120, 6, 2, [Moves[0], Moves[2]]),
+  new Pokemon("Pidgey", Tipos.FLYING, 110, 110, 7, 4, [Moves[0], Moves[9]]),
 ];
 
-for (let i = 0; i < Pokemones.length; i++) {
-  console.log(`Nombre: ${Pokemones[i].name}`);
-  console.log(`Tipo: ${Pokemones[i].type}`);
-  console.log(`Vida actual: ${Pokemones[i].chp}`);
-  console.log(`Vida máxima: ${Pokemones[i].mhp}`);
-  console.log(`Ataque: ${Pokemones[i].attackStat}`);
-  console.log(`Defensa: ${Pokemones[i].deffense}`);
-  console.log(Pokemones[i].moves);
+/*for (let i = 0; i < Pokemons.length; i++) {
+  console.log(`Nombre: ${Pokemons[i].name}`);
+  console.log(`Tipo: ${Pokemons[i].type}`);
+  console.log(`Vida actual: ${Pokemons[i].chp}`);
+  console.log(`Vida máxima: ${Pokemons[i].mhp}`);
+  console.log(`Ataque: ${Pokemons[i].attackStat}`);
+  console.log(`Defensa: ${Pokemons[i].deffense}`);
+  console.log(Pokemons[i].moves);
   console.log("\n");
+}*/
+
+let vidaJugador = true;
+let vidaOponente = true;
+let healJ = true;
+let healO = true;
+
+let PJugador = Pokemons[Math.floor(Math.random() * Pokemons.length)];
+let POponente = Pokemons[Math.floor(Math.random() * Pokemons.length)];
+while (PJugador == POponente) {
+  POponente = Pokemons[Math.floor(Math.random() * Pokemons.length)];
 }
 
-let PJugador = Math.floor(Math.random() * Pokemones.length);
-let POponente = Math.floor(Math.random() * Pokemones.length);
+while (vidaJugador && vidaOponente) {
+  if (PJugador.chp > 0) {
+    console.log(`Pokemon Jugador: ${PJugador.name} | HP: ${PJugador.chp}`);
+    console.log(`====================================`);
+    console.log(`Pokemon Oponente: ${POponente.name} | HP: ${POponente.chp}`);
+    console.log(`------------------------------------`);
+    console.log(`1.- Ataque | 2.- Curacion`);
+    let opt = Number(scanner.question("Elige una opcion: "));
+
+    switch (opt) {
+      case 1: {
+        console.log(
+          `1.- ${PJugador.moves[0].move} | 2.- ${PJugador.moves[1].move}`
+        );
+        let movimiento = Number(scanner.question("Elige un movimiento: "));
+        PJugador.attack(movimiento, POponente);
+        console.log("\n");
+        break;
+      }
+      case 2: {
+        if (healJ) {
+          PJugador.heal();
+
+          healJ = false;
+          console.log(`${PJugador.name} ha sido curado.\n`);
+        } else {
+          console.log(`${PJugador.name} ya no puede curarse.`);
+        }
+        break;
+      }
+    }
+    if (POponente.chp > 0) {
+      if (POponente.chp >= POponente.mhp / 2) {
+        turnoOponente = 1;
+      } else if (POponente.chp < POponente.mhp / 2 && healO) {
+        turnoOponente = Math.floor(Math.random() * 2) + 1;
+      }
+
+      switch (turnoOponente) {
+        case 1: {
+          let movimiento = Math.floor(Math.random() * 2) + 1;
+          POponente.attack(movimiento, PJugador);
+          console.log("\n");
+          break;
+        }
+        case 2: {
+          if (healO) {
+            POponente.heal();
+            healO = false;
+            console.log(`${POponente.name} ha sido curado.\n`);
+          } else {
+            console.log(`${POponente.name} ya no puede curarse.`);
+          }
+          break;
+        }
+      }
+    } else {
+      vidaOponente = false;
+      console.log(`${POponente.name} ha sido derrotado. Juego terminado`);
+    }
+  } else {
+    vidaJugador = false;
+    console.log(`${PJugador.name} ha sido derrotado. Juego terminado`);
+  }
+}

@@ -9,19 +9,22 @@ class Pokemon {
     this.moves = moves;
   }
 
-  attack(oponent) {
-    let ran = Math.floor(Math.random() * 16) + 85;
-    //Damage = (Attack / Defense) * Move Damage * Random Factor
-    if (ran == 0) {
+  attack(nmove, oponent) {
+    let ran = (Math.floor(Math.random() * 17) + 84) / 100;
+    if (ran == 0.84) {
       console.log("El ataque ha fallado. ");
     } else {
-      let dmg = (this.attackStat / oponent.deffense) * this.moves.dmg * ran;
-      return dmg;
+      let dmg =
+        (this.attackStat / oponent.deffense) * this.moves[nmove - 1].dmg * ran;
+      let ent = Math.trunc(dmg);
+      oponent.chp -= ent;
     }
   }
 
   heal() {
-    this.chp += this.mhp / 2;
+    let vida = this.chp;
+    vida += this.mhp / 2;
+    vida > this.mhp ? (this.chp = this.mhp) : (this.chp = vida);
   }
 }
 
