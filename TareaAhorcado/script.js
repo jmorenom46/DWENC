@@ -23,11 +23,7 @@ function Comprobar() {
     } else {
       errores++;
       let num = Math.floor(Math.random() * 6) + 1;
-      for (let i = 0; i < ids.length; i++) {
-        if (){
-
-        }
-      }
+      for (let i = 0; i < ids.length; i++) {}
     }
   }
 }
