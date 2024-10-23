@@ -28,9 +28,8 @@ function Probar() {
           if (letra == palabra.charAt(i)) {
             console.log(palabra.length);
             acierto = true;
-            pErrores.textContent = `Numero de errores = ${errores}`;
+            numAciertos++;
           } else {
-            errores++;
             while (notIgual) {
               num = Math.floor(Math.random() * 6) + 1;
               notIgual = Comprobar(num);
@@ -39,11 +38,18 @@ function Probar() {
             bot.style.backgrowndcolor = "red";
           }
         }
+        if (acierto == false) {
+          errores++;
+          pErrores.textContent = `Numero de errores = ${errores}`;
+        }
+        acierto = false;
+        notIgual = true;
       }
     } else {
       return;
     }
   } else {
+    return;
   }
 }
 function Comprobar(num) {
