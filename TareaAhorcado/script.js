@@ -40,7 +40,11 @@ function Probar() {
         }
         if (acierto == false) {
           errores++;
-          pErrores.textContent = `Numero de errores = ${errores}`;
+          if (errores == 6) {
+            pErrores.textContent = `Juego terminado. Perdiste`;
+          } else {
+            pErrores.textContent = `Numero de errores = ${errores}`;
+          }
         }
         acierto = false;
         notIgual = true;
