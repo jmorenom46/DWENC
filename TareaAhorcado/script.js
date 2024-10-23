@@ -46,8 +46,6 @@ function Probar() {
             pErrores.textContent = `Numero de errores = ${errores}`;
           }
         }
-        acierto = false;
-        notIgual = true;
       }
     } else {
       return;
