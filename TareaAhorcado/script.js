@@ -1,32 +1,54 @@
 let palabra = "JUGAR";
 let errores = 0;
-let igual = false;
+let num;
+let notIgual = true;
 let numeros = [1, 2, 3, 4, 5, 6];
 let letra = 0;
 let pal = document.getElementById("palabraSecreta");
+let pErrores = document.getElementById("errores");
 document.addEventListener("DOMContentLoaded", function () {
   for (let i = 0; i < palabra.length; i++) {
     pal.innerHTML += "_ ";
   }
 });
-function Comprobar() {
+function Probar() {
   if (errores == 6) {
+    return;
   } else {
-    let letra = document.getElementById("letra").value;
+    console.log("Probar");
+    let letra = document.getElementById("letra").value.trim().toUpperCase();
     let acierto = false;
-    for (let i = 0; i < palabra.length; i++) {
-      if (letra == palabra[i]) {
-        acierto = true;
+    if (acierto == false) {
+      if (letra == "") {
+        alert("Ingresa una letra");
+      } else {
+        for (let i = 0; i < palabra.length; i++) {
+          if (letra == palabra.charAt(i)) {
+            console.log(palabra.length);
+            acierto = true;
+            pErrores.textContent = `Numero de errores = ${errores}`;
+          } else {
+            errores++;
+            while (notIgual) {
+              num = Math.floor(Math.random() * 6) + 1;
+              notIgual = Comprobar(num);
+            }
+            let bot = document.getElementById(num);
+            bot.style.backgrowndcolor = "red";
+          }
+        }
       }
-    }
-    if (acierto) {
-
     } else {
-      errores++;
-      let num = Math.floor(Math.random() * 6) + 1;
-      for (let i = 0; i < numeros.length; i++) {
-        
-      }
+      return;
+    }
+  }
+}
+function Comprobar(num) {
+  for (let i = 0; i < numeros.length; i++) {
+    if (numeros[i] == num) {
+      return true;
+    } else {
+      return false;
     }
   }
 }
