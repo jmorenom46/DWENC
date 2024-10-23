@@ -4,6 +4,8 @@ let num;
 let notIgual = true;
 let numeros = [1, 2, 3, 4, 5, 6];
 let letra = 0;
+let aciertoFull = false;
+let numAciertos = 0;
 let pal = document.getElementById("palabraSecreta");
 let pErrores = document.getElementById("errores");
 document.addEventListener("DOMContentLoaded", function () {
@@ -14,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function Probar() {
   if (errores == 6) {
     return;
-  } else {
+  } else if (aciertoFull < palabra.length) {
     console.log("Probar");
     let letra = document.getElementById("letra").value.trim().toUpperCase();
     let acierto = false;
@@ -41,6 +43,7 @@ function Probar() {
     } else {
       return;
     }
+  } else {
   }
 }
 function Comprobar(num) {
