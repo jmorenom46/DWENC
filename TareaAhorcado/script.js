@@ -34,8 +34,8 @@ function Probar() {
               num = Math.floor(Math.random() * 6) + 1;
               notIgual = Comprobar(num);
             }
-            let bot = document.getElementById(num);
-            bot.style.backgrowndcolor = "red";
+            let bot = document.getElementById(num);//cambiar
+            bot.style.backgroundColor = "red";
           }
         }
         if (acierto == false) {
