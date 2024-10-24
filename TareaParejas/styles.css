@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+}
+.carta{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 10px;
+    background-color: rgb(207, 207, 207);
+    hover{
+        background-color: rgb(54, 205, 255);
+    }
+}
+.mostrada{
+    background-color: rgb(54, 205, 255);
+}
+.escondida{
+    background-color: rgb(207, 207, 207);
+}
