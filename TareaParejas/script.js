@@ -29,6 +29,7 @@ function mostrarCarta(carta) {
 }
 
 function verificarPareja() {
+
   if (cartasMostradas[0].dataset.fruta === cartasMostradas[1].dataset.fruta) {
     for (let i = 0; i < 2; i++) {
       cartasMostradas.splice(0, 1);
