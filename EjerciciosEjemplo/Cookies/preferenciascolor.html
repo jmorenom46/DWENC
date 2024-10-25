@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preferencias de Color</title>
+    <style>
+      :root {
+        --white: #fff5f5;
+        --black: #070707;
+        --soft-red: #ffc5c5;
+        --soft-blue: #cce5ff;
+        --soft-green: #c6efce;
+        --soft-yellow: #ffffcc;
+        --soft-purple: #e6e6fa;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: var(--white);
+        color: var(--black);
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        transition: background-color 0.5s ease;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      select {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        background-color: var(--white);
+        border: 2px solid var(--black);
+        border-radius: 5px;
+        transition: border-color 0.3s ease;
+      }
+
+      select:hover {
+        border-color: var(--soft-blue);
+      }
+
+      option {
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Elige tu color de fondo favorito</h1>
+    <select id="colorSelect" onchange="guardarPreferenciaColor()">
+      <option value="#fff5f5">Blanco</option>
+      <option value="#ffc5c5">Rojo Suave</option>
+      <option value="#cce5ff">Azul Suave</option>
+      <option value="#c6efce">Verde Suave</option>
+      <option value="#ffffcc">Amarillo Suave</option>
+      <option value="#e6e6fa">Púrpura Suave</option>
+    </select>
+
+    <script>
+      function setCookie(name, value, days) {
+        const d = new Date();
+        d.setTime(d.getTime() + days * 24 * 60 * 60 * 1000);
+        document.cookie = `${name}=${value}; expires=${d.toUTCString()}; path=/`;
+      }
+
+      function getCookie(name) {
+        const cookies = document.cookie.split(";");
+        for (let cookie of cookies) {
+          let c = cookie.trim();
+          if (c.startsWith(`${name}=`)) return c.substring(name.length + 1);
+        }
+        return null;
+      }
+
+      function aplicarPreferenciasColor() {
+        const colorPreferido = getCookie("colorFondo");
+        if (colorPreferido) {
+          document.body.style.backgroundColor = colorPreferido;
+          document.getElementById("colorSelect").value = colorPreferido;
+        }
+      }
+
+      function guardarPreferenciaColor() {
+        const color = document.getElementById("colorSelect").value;
+        setCookie("colorFondo", color, 30);
+        document.body.style.backgroundColor = color;
+      }
+
+      window.onload = aplicarPreferenciasColor;
+    </script>
+  </body>
+</html>

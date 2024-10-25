@@ -172,6 +172,7 @@
         cart = cart ? JSON.parse(cart) : [];
 
         const index = cart.findIndex((item) => item.product === product);
+        console.log(index);
 
         if (index === -1) {
           cart.push({ product, quantity: 1 });
