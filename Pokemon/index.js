@@ -46,90 +46,6 @@ const Moves = [
   },
 ];
 
-/*let Pokemones = [
-  {
-    name: "Sceptile",
-    type: Tipos.GRASS,
-    chp: 140,
-    mhp: 140,
-    attackStat: 5,
-    deffense: 3,
-    moves: [Moves[0], Moves[7]],
-  },
-  {
-    name: "Charmarder",
-    type: Tipos.FIRE,
-    chp: 130,
-    mhp: 130,
-    attackStat: 6,
-    deffense: 2,
-    moves: [Moves[0], Moves[3]],
-  },
-  {
-    name: "Squirtle",
-    type: Tipos.WATER,
-    chp: 120,
-    mhp: 120,
-    attackStat: 5,
-    deffense: 5,
-    moves: [Moves[0], Moves[1]],
-  },
-  {
-    name: "Geodude",
-    type: Tipos.ROCK,
-    chp: 200,
-    mhp: 200,
-    attackStat: 2,
-    deffense: 7,
-    moves: [Moves[0], Moves[4]],
-  },
-  {
-    name: "Mankey",
-    type: Tipos.FIGHTING,
-    chp: 140,
-    mhp: 140,
-    attackStat: 4,
-    deffense: 4,
-    moves: [Moves[0], Moves[5]],
-  },
-  {
-    name: "Meowth",
-    type: Tipos.NORMAL,
-    chp: 150,
-    mhp: 150,
-    attackStat: 5,
-    deffense: 3,
-    moves: [Moves[0], Moves[6]],
-  },
-  {
-    name: "Lapras",
-    type: Tipos.ICE,
-    chp: 160,
-    mhp: 160,
-    attackStat: 4,
-    deffense: 5,
-    moves: [Moves[0], Moves[8]],
-  },
-  {
-    name: "Pawmot",
-    type: Tipos.ELECTRIC,
-    chp: 120,
-    mhp: 120,
-    attackStat: 6,
-    deffense: 2,
-    moves: [Moves[0], Moves[2]],
-  },
-  {
-    name: "Pidgey",
-    type: Tipos.FLYING,
-    chp: 110,
-    mhp: 110,
-    attackStat: 7,
-    deffense: 4,
-    moves: [Moves[0], Moves[9]],
-  },
-];*/
-
 let Pokemons = [
   new Pokemon("Sceptile", Tipos.GRASS, 140, 140, 5, 3, [Moves[0], Moves[7]]),
   new Pokemon("Charmarder", Tipos.FIRE, 130, 130, 6, 2, [Moves[0], Moves[3]]),
@@ -141,17 +57,6 @@ let Pokemons = [
   new Pokemon("Pawmot", Tipos.ELECTRIC, 120, 120, 6, 2, [Moves[0], Moves[2]]),
   new Pokemon("Pidgey", Tipos.FLYING, 110, 110, 7, 4, [Moves[0], Moves[9]]),
 ];
-
-/*for (let i = 0; i < Pokemons.length; i++) {
-  console.log(`Nombre: ${Pokemons[i].name}`);
-  console.log(`Tipo: ${Pokemons[i].type}`);
-  console.log(`Vida actual: ${Pokemons[i].chp}`);
-  console.log(`Vida máxima: ${Pokemons[i].mhp}`);
-  console.log(`Ataque: ${Pokemons[i].attackStat}`);
-  console.log(`Defensa: ${Pokemons[i].deffense}`);
-  console.log(Pokemons[i].moves);
-  console.log("\n");
-}*/
 
 let vidaJugador = true;
 let vidaOponente = true;
