@@ -911,20 +911,27 @@ const pokemons = [
     types: ["Psychic"],
   },
 ];
+
+let Pokemons = [
+    new Pokemon(1, "Bulbasaur", "https://projectpokemon.org/images/normal-sprite/bulbasaur.gif", ["Grass", "Poison"]),
+    new Pokemon(2, "Ivysaur", "https://projectpokemon.org/images/normal-sprite/ivysaur.gif", ["Grass", "Poison"]),
+    new Pokemon(3, "Venusaur", "https://projectpokemon.org/images/normal-sprite/venusaur.gif", ["Grass", "Poison"]),
+    new Pokemon(4, "Charmander", "https://projectpokemon.org/images/normal-sprite/charmander.gif", ["Fire"]),
+    new Pokemon(5, "Charmeleon", "https://projectpokemon.org/images/normal-sprite/charmeleon.gif", ["Fire"]),
+    new Pokemon(6, "Charizard", "https://projectpokemon.org/images/normal-sprite/charizard.gif", ["Fire", "Flying"]),
+];
+console.log(Pokemons);
 document.addEventListener("DOMContentLoaded", function () {
-    const list = document.getElementById("dynamic-list");
-    let counter = 1;
-  
-    Pokemon.forEach((Pokemon) => {
-      const newItem = document.createElement("li");
-  
-      //newItem.textContent = `Pokemon ${Pokemon.name} `;
-      newItem.innerHTML = `<p>Pokemon ${Pokemon.name}</p><br>
-      <p>${Pokemon.type}</p>`;
-  
-      list.appendChild(newItem);
-    });
-  
-    
+  const list = document.getElementById("pokedex");
+
+  Pokemons.forEach((Pokemon) => {
+    const newItem = document.createElement("div");
+    newItem.innerHTML = 
+    `<img src=${Pokemon.img} /><br>
+    <p>Pokemon ${Pokemon.id}</p><br>
+    <p>${Pokemon.name}</p><br>
+    <p>${Pokemon.types}</p><br>`;
+
+    list.appendChild(newItem);
   });
-  
+});
