@@ -1,5 +1,5 @@
-let Pokemon = require("./Pokemon");
-let Move = require(".Move");
+/*let Pokemon = require("./Pokemon");
+let Move = require("./Move");*/
 
 let moves = [];
 
@@ -912,26 +912,355 @@ const pokemons = [
   },
 ];
 
-let Pokemons = [
-    new Pokemon(1, "Bulbasaur", "https://projectpokemon.org/images/normal-sprite/bulbasaur.gif", ["Grass", "Poison"]),
-    new Pokemon(2, "Ivysaur", "https://projectpokemon.org/images/normal-sprite/ivysaur.gif", ["Grass", "Poison"]),
-    new Pokemon(3, "Venusaur", "https://projectpokemon.org/images/normal-sprite/venusaur.gif", ["Grass", "Poison"]),
-    new Pokemon(4, "Charmander", "https://projectpokemon.org/images/normal-sprite/charmander.gif", ["Fire"]),
-    new Pokemon(5, "Charmeleon", "https://projectpokemon.org/images/normal-sprite/charmeleon.gif", ["Fire"]),
-    new Pokemon(6, "Charizard", "https://projectpokemon.org/images/normal-sprite/charizard.gif", ["Fire", "Flying"]),
-];
-console.log(Pokemons);
+/*let Pokemons = [
+  new Pokemon(
+    1,
+    "Bulbasaur",
+    "https://projectpokemon.org/images/normal-sprite/bulbasaur.gif",
+    ["Grass", "Poison"]
+  ),
+  new Pokemon(
+    2,
+    "Ivysaur",
+    "https://projectpokemon.org/images/normal-sprite/ivysaur.gif",
+    ["Grass", "Poison"]
+  ),
+  new Pokemon(
+    3,
+    "Venusaur",
+    "https://projectpokemon.org/images/normal-sprite/venusaur.gif",
+    ["Grass", "Poison"]
+  ),
+  new Pokemon(
+    4,
+    "Charmander",
+    "https://projectpokemon.org/images/normal-sprite/charmander.gif",
+    ["Fire"]
+  ),
+  new Pokemon(
+    5,
+    "Charmeleon",
+    "https://projectpokemon.org/images/normal-sprite/charmeleon.gif",
+    ["Fire"]
+  ),
+  new Pokemon(
+    6,
+    "Charizard",
+    "https://projectpokemon.org/images/normal-sprite/charizard.gif",
+    ["Fire", "Flying"]
+  ),
+  new Pokemon(
+    7,
+    "Squirtle",
+    "https://projectpokemon.org/images/normal-sprite/squirtle.gif",
+    ["Water"]
+  ),
+  new Pokemon(
+    8,
+    "Wartortle",
+    "https://projectpokemon.org/images/normal-sprite/wartortle.gif",
+    ["Water"]
+  ),
+  new Pokemon(
+    9,
+    "Blastoise",
+    "https://projectpokemon.org/images/normal-sprite/blastoise.gif",
+    ["Water"]
+  ),
+  new Pokemon(
+    10,
+    "Caterpie",
+    "https://projectpokemon.org/images/normal-sprite/caterpie.gif",
+    ["Bug"]
+  ),
+  new Pokemon(
+    11,
+    "Metapod",
+    "https://projectpokemon.org/images/normal-sprite/metapod.gif",
+    ["Bug"]
+  ),
+  new Pokemon(
+    12,
+    "Butterfree",
+    "https://projectpokemon.org/images/normal-sprite/butterfree.gif",
+    ["Bug", "Flying"]
+  ),
+  new Pokemon(
+    13,
+    "Weedle",
+    "https://projectpokemon.org/images/normal-sprite/weedle.gif",
+    ["Bug", "Poison"]
+  ),
+  new Pokemon(
+    14,
+    "Kakuna",
+    "https://projectpokemon.org/images/normal-sprite/kakuna.gif",
+    ["Bug", "Poison"]
+  ),
+  new Pokemon(
+    15,
+    "Beedrill",
+    "https://projectpokemon.org/images/normal-sprite/beedrill.gif",
+    ["Bug", "Poison"]
+  ),
+  new Pokemon(
+    16,
+    "Pidgey",
+    "https://projectpokemon.org/images/normal-sprite/pidgey.gif",
+    ["Normal", "Flying"]
+  ),
+  new Pokemon(
+    17,
+    "Pidgeotto",
+    "https://projectpokemon.org/images/normal-sprite/pidgeotto.gif",
+    ["Normal", "Flying"]
+  ),
+  new Pokemon(
+    18,
+    "Pidgeot",
+    "https://projectpokemon.org/images/normal-sprite/pidgeot.gif",
+    ["Normal", "Flying"]
+  ),
+  new Pokemon(
+    19,
+    "Rattata",
+    "https://projectpokemon.org/images/normal-sprite/rattata.gif",
+    ["Normal"]
+  ),
+  new Pokemon(
+    20,
+    "Raticate",
+    "https://projectpokemon.org/images/normal-sprite/raticate.gif",
+    ["Normal"]
+  ),
+  new Pokemon(
+    21,
+    "Spearow",
+    "https://projectpokemon.org/images/normal-sprite/spearow.gif",
+    ["Normal", "Flying"]
+  ),
+  new Pokemon(
+    22,
+    "Fearow",
+    "https://projectpokemon.org/images/normal-sprite/fearow.gif",
+    ["Normal", "Flying"]
+  ),
+  new Pokemon(
+    23,
+    "Ekans",
+    "https://projectpokemon.org/images/normal-sprite/ekans.gif",
+    ["Poison"]
+  ),
+  new Pokemon(
+    24,
+    "Arbok",
+    "https://projectpokemon.org/images/normal-sprite/arbok.gif",
+    ["Poison"]
+  ),
+  new Pokemon(
+    25,
+    "Pikachu",
+    "https://projectpokemon.org/images/normal-sprite/pikachu.gif",
+    ["Electric"]
+  ),
+  new Pokemon(
+    26,
+    "Raichu",
+    "https://projectpokemon.org/images/normal-sprite/raichu.gif",
+    ["Electric"]
+  ),
+  new Pokemon(
+    27,
+    "Sandshrew",
+    "https://projectpokemon.org/images/normal-sprite/sandshrew.gif",
+    ["Ground"]
+  ),
+  new Pokemon(
+    28,
+    "Sandslash",
+    "https://projectpokemon.org/images/normal-sprite/sandslash.gif",
+    ["Ground"]
+  ),
+  new Pokemon(
+    29,
+    "Nidoran♀",
+    "https://projectpokemon.org/images/normal-sprite/nidoran-f.gif",
+    ["Poison"]
+  ),
+  new Pokemon(
+    30,
+    "Nidorina",
+    "https://projectpokemon.org/images/normal-sprite/nidorina.gif",
+    ["Poison"]
+  ),
+  new Pokemon(
+    31,
+    "Nidoqueen",
+    "https://projectpokemon.org/images/normal-sprite/nidoqueen.gif",
+    ["Poison", "Ground"]
+  ),
+  new Pokemon(
+    32,
+    "Nidoran♂",
+    "https://projectpokemon.org/images/normal-sprite/nidoran-m.gif",
+    ["Poison"]
+  ),
+  new Pokemon(
+    33,
+    "Nidorino",
+    "https://projectpokemon.org/images/normal-sprite/nidorino.gif",
+    ["Poison"]
+  ),
+  new Pokemon(
+    34,
+    "Nidoking",
+    "https://projectpokemon.org/images/normal-sprite/nidoking.gif",
+    ["Poison", "Ground"]
+  ),
+  new Pokemon(
+    35,
+    "Clefairy",
+    "https://projectpokemon.org/images/normal-sprite/clefairy.gif",
+    ["Fairy"]
+  ),
+  new Pokemon(
+    36,
+    "Clefable",
+    "https://projectpokemon.org/images/normal-sprite/clefable.gif",
+    ["Fairy"]
+  ),
+  new Pokemon(
+    37,
+    "Vulpix",
+    "https://projectpokemon.org/images/normal-sprite/vulpix.gif",
+    ["Fire"]
+  ),
+  new Pokemon(
+    38,
+    "Ninetales",
+    "https://projectpokemon.org/images/normal-sprite/ninetales.gif",
+    ["Fire"]
+  ),
+  new Pokemon(
+    39,
+    "Jigglypuff",
+    "https://projectpokemon.org/images/normal-sprite/jigglypuff.gif",
+    ["Normal", "Fairy"]
+  ),
+  new Pokemon(
+    40,
+    "Wigglytuff",
+    "https://projectpokemon.org/images/normal-sprite/wigglytuff.gif",
+    ["Normal", "Fairy"]
+  ),
+  new Pokemon(
+    41,
+    "Zubat",
+    "https://projectpokemon.org/images/normal-sprite/zubat.gif",
+    ["Poison", "Flying"]
+  ),
+  new Pokemon(
+    42,
+    "Golbat",
+    "https://projectpokemon.org/images/normal-sprite/golbat.gif",
+    ["Poison", "Flying"]
+  ),
+  new Pokemon(
+    43,
+    "Oddish",
+    "https://projectpokemon.org/images/normal-sprite/oddish.gif",
+    ["Grass", "Poison"]
+  ),
+  new Pokemon(
+    44,
+    "Gloom",
+    "https://projectpokemon.org/images/normal-sprite/gloom.gif",
+    ["Grass", "Poison"]
+  ),
+  new Pokemon(
+    45,
+    "Vileplume",
+    "https://projectpokemon.org/images/normal-sprite/vileplume.gif",
+    ["Grass", "Poison"]
+  ),
+  new Pokemon(
+    46,
+    "Paras",
+    "https://projectpokemon.org/images/normal-sprite/paras.gif",
+    ["Bug", "Grass"]
+  ),
+  new Pokemon(
+    47,
+    "Parasect",
+    "https://projectpokemon.org/images/normal-sprite/parasect.gif",
+    ["Bug", "Grass"]
+  ),
+  new Pokemon(
+    48,
+    "Venonat",
+    "https://projectpokemon.org/images/normal-sprite/venonat.gif",
+    ["Bug", "Poison"]
+  ),
+  new Pokemon(
+    49,
+    "Venomoth",
+    "https://projectpokemon.org/images/normal-sprite/venomoth.gif",
+    ["Bug", "Poison"]
+  ),
+  new Pokemon(
+    50,
+    "Diglett",
+    "https://projectpokemon.org/images/normal-sprite/diglett.gif",
+    ["Ground"]
+  ),
+  new Pokemon(
+    51,
+    "Dugtrio",
+    "https://projectpokemon.org/images/normal-sprite/dugtrio.gif",
+    ["Ground"]
+  ),
+  new Pokemon(
+    52,
+    "Meowth",
+    "https://projectpokemon.org/images/normal-sprite/meowth.gif",
+    ["Normal"]
+  ),
+  new Pokemon(
+    53,
+    "Persian",
+    "https://projectpokemon.org/images/normal-sprite/persian.gif",
+    ["Normal"]
+  ),
+  new Pokemon(
+    54,
+    "Psyduck",
+    "https://projectpokemon.org/images/normal-sprite/psyduck.gif",
+    ["Water"]
+  )
+];*/
+
 document.addEventListener("DOMContentLoaded", function () {
   const list = document.getElementById("pokedex");
-
-  Pokemons.forEach((Pokemon) => {
-    const newItem = document.createElement("div");
-    newItem.innerHTML = 
-    `<img src=${Pokemon.img} /><br>
-    <p>Pokemon ${Pokemon.id}</p><br>
-    <p>${Pokemon.name}</p><br>
-    <p>${Pokemon.types}</p><br>`;
-
-    list.appendChild(newItem);
-  });
+  for (let i = 0; i < pokemons.length; i++) {
+    const newPokemon = document.createElement("div");
+    newPokemon.className = "pokemon";
+    if (pokemons[i].types.length > 1) {
+        if (pokemons[i].types[0] == "Grass"){
+        }
+      newPokemon.innerHTML = `<img src=${pokemons[i].img} /><br>
+      <p>Nº: ${pokemons[i].id}</p>
+      <p>${pokemons[i].name}</p>
+      <div class="tipos">
+      <p>${pokemons[i].types[0]}</p>
+      <p>${pokemons[i].types[1]}</p>`;
+      list.appendChild(newPokemon);
+    } else {
+      newPokemon.innerHTML = `<img src=${pokemons[i].img} /><br>
+      <p>Nº: ${pokemons[i].id}</p>
+      <p>${pokemons[i].name}</p>
+      <div class="tipos">
+      <p>${pokemons[i].types[0]}</p>`;
+      list.appendChild(newPokemon);
+    }
+  }
 });

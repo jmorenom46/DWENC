@@ -7,7 +7,35 @@
 #Continuar{
     margin: 0vh 2vh 0vh 0vh;
 }
+#pokedex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.pokemon{
+    border: 1px solid black;
+    width: 18vh;
+}
 img{
-    width: 100px;
-    height: 100px;
+    margin-top: 2vh;
+    height: 10vh;
+    padding: 1vh;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+.pokemon, p{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 1vh 2vh 1vh 2vh;
+}
+.tipos{
+    display: flex;
+    justify-content: center;
+}
+.tipos p{
+    margin: 0vh 0.5vh 1vh 0.5vh;
+    padding: 0.5vh 0.5vh 0.5vh 0.5vh;
 }
