@@ -1,0 +1,86 @@
+body{
+    margin: auto;
+    text-align: center;
+    background-color: rgb(68, 68, 68);
+}
+
+#Continuar{
+    margin: auto;
+    margin-top: 3vh;
+    height: 3vh;
+    border-radius: 10px;
+    background: radial-gradient(white 50%, black );
+    box-shadow: 7px 7px 2px 2px rgb(29, 29, 29);
+}
+
+.imagenVS{
+    margin: auto;
+    margin-top: 1vh;
+    width: 50%;
+}
+.vs{
+    display: flex;
+    flex: wrap;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    border: 5px solid black;
+    box-shadow: 30px 20px 15px 15px rgb(29, 29, 29);
+    width: 30%;
+    padding: 4vh;
+    margin-top: 4vh;
+    border-radius: 40px;
+    background: radial-gradient(white, black 90%);
+}
+.divImagenVS{
+    margin: auto;
+    width: 10%;
+}
+.Nombre{
+    text-align: center;
+    font-size: 1em;
+}
+.pokemon{
+    background-color: rgb(197, 197, 197);
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 1vh;
+    padding-top: 1vh;
+    width: 100%;
+}
+.pokemon p{
+    margin: auto;
+    margin-bottom: 1vh;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 80%;
+    background-color: white;
+}
+.pokemon img{
+    height: 10vh;
+    width: 10vh;
+    align-content: center;
+}
+.pokemonShiny{
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(252, 93, 254, 0.5), black, rgb(250, 245, 117, 0.5), black);
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto;
+    width: 100%;
+}
+.pokemonShiny p{
+    margin: auto;
+    margin-bottom: 1vh;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 80%;
+    background: linear-gradient(to right, rgb(252, 93, 254), rgb(250, 245, 117));
+}
+.pokemonShiny img{
+    height: 10vh;
+    width: 10vh;
+    height: auto;
+}

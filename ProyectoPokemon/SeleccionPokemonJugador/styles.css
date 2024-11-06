@@ -1,0 +1,155 @@
+#botones{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+#Continuar{
+    margin: 0vh 2vh 0vh 0vh;
+}
+#pokedex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+#pokedex div:hover{
+    background-color: rgb(186, 186, 186);
+}
+#pokedex div:active{
+    background-color: green;
+}
+.pokemon{
+    border: 1px solid black;
+    width: 18vh;
+}
+.pokemon, p{
+    background-color: rgb(151, 151, 151);
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 1vh 2vh 1vh 2vh;
+}
+.pokemonShiny{
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(252, 93, 254, 0.5), black, rgb(250, 245, 117, 0.5), black);
+    border: 1px solid black;
+    width: 18vh;
+}
+.pokemonShiny, p{
+    background-color: rgb(151, 151, 151);
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 1vh 2vh 1vh 2vh;
+}
+.pokemonShiny .tipos:hover{
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(252, 93, 254, 0.5), black, rgb(250, 245, 117, 0.5), black);
+}
+.tipos{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+.tipos:hover{
+    background-color: rgb(186, 186, 186);
+}
+.tipos p{
+    margin: 0vh 0.5vh 1vh 0.5vh;
+    padding: 0vh 0.8vh 0vh 0.8vh;
+}
+.seleccionado{
+    background-color: green;
+    border-color: green;
+    border: 1px solid black;
+    width: 18vh;
+}
+.seleccionado, p{
+    border-radius: 10px;
+    margin: 1vh 2vh 1vh 2vh;
+}
+img{
+    margin-top: 2vh;
+    height: 10vh;
+    width: 10vh;
+    padding: 1vh;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+.Parrafo{
+    background-color: rgb(255, 255, 255);
+}
+
+.Shiny{
+    background: linear-gradient(to right, rgb(252, 93, 254), rgb(250, 245, 117));
+}
+
+
+/* Colores de los tipos */
+.Grass{
+    background-color: #1fc05d;
+    color: black;
+}
+.Fire{
+    background-color: #BF212E;
+    color: black;
+}
+.Poison{
+    background-color: #602D89;
+    color: black;
+}
+.Flying{
+    background-color: #99B8CD;
+    color: black;
+}
+.Water{
+    background-color: #1154EC;
+    color: black;
+}
+.Bug{
+    background-color: #217a30;
+    color: black;
+}
+.Normal{
+    background-color: #7A555F;
+    color: black;
+}
+.Electric{
+    background-color: #F2E52E;
+    color: black;
+}
+.Ground{
+    background-color: #AA7024;
+    color: black;
+}
+.Fairy{
+    background-color: #971C43;
+    color: black;
+}
+.Fighting{
+    background-color: #A1412B;
+    color: black;
+}
+.Psychic{
+    background-color: #AD2A70;
+    color: black;
+}
+.Rock{
+    background-color: #4A180E;
+    color: black;
+}
+.Steel{
+    background-color: #637A70;
+    color: black;
+}
+.Ice{
+    background-color: #8BD9FC;
+    color: black;
+}
+.Ghost{
+    background-color: #333370;
+    color: black;
+}
+.Dragon{
+    background-color: #3E939D;
+    color: black;
+}
+
