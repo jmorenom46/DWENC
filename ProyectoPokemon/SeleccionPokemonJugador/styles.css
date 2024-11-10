@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(68, 68, 68);
+}
 #botones{
     display: flex;
     margin: auto;

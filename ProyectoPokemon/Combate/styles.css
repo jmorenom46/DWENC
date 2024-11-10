@@ -1,0 +1,254 @@
+body{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(68, 68, 68);
+}
+h2{
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 3%;
+}
+.combate{
+    margin: auto;
+    margin-top: 5%;
+    display: grid;
+    width: 100%;
+}
+.log{
+    width: 80%;
+    height: 35vh;
+    border: 1px solid black;
+    margin: auto;
+    margin-right: 5%;
+    overflow: auto;
+    background-color: rgb(151, 151, 151);
+}
+.pokemon{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 5%;
+    width: 80%;
+    background-color: rgb(151, 151, 151);
+}
+.imagenPokemon{
+    width: 20%;
+    height: auto;
+    margin-top: 5%;
+}
+.Nombre{
+    border-radius: 10px;
+    text-align: center;
+}
+.barraVida {
+    margin: auto;
+    width: 80%;                 
+    background-color: #ddd;   
+    border-radius: 10px;        
+    overflow: hidden;  
+    margin-bottom: 5%;
+    border: 4px solid black;
+}
+.Vida {
+    text-align: left;
+    height: 100%;              
+    width: 100%;                
+    background-color: #4caf50; 
+    transition: width 0.3s ease; 
+    border-radius: 5px; 
+}
+.jugabilidad{
+    width: 100%;
+    margin: auto;
+    margin-top: 10%;
+    display: grid;
+}
+.botones{
+    margin: auto;
+    display: flex;
+}
+.botonAtacar{
+    margin: auto;
+    padding: 2vh 4vh 2vh 4vh;
+    background-color: rgba(255, 0, 0, 0.708);
+    border: 3px solid black;
+    font-weight: 900;
+    margin-right: 2%;
+    margin-top: 20%;
+}
+.botonAtacar:hover{
+    background-color: rgb(194, 194, 194);
+    transition: ease 0.1s;
+    transform: scale(1.1);
+}
+.botonHeal{
+    margin: auto;
+    padding: 2vh 4vh 2vh 4vh;
+    background-color: rgba(27, 115, 0, 0.708);
+    border: 3px solid black;
+    font-weight: 900;
+    margin-left: 2%;
+    margin-top: 20%;
+}
+.botonHeal:hover{
+    background-color: rgb(194, 194, 194);
+    transition: ease 0.1s;
+    transform: scale(1.1);
+}
+.botonSalir{
+    margin: auto;
+    margin-top: 2vh;
+    padding: 1vh 3vh 1vh 3vh;
+    background-color: green;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 50%;
+}
+.botonSalir:hover{
+    background-color: rgba(255, 0, 0, 0.6);
+    transition: ease 0.1s;
+    transform: scale(1.1);
+}
+.boton{
+    margin: auto;
+}
+.boton, p{
+    margin: auto;
+}
+.botonMovimientos{
+    margin: auto;
+    margin-top: 2vh;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    width: 45%;
+}
+.botonMovimientos:hover{
+    background-color: rgb(194, 194, 194);
+    transition: ease 0.1s;
+    transform: scale(1.1);
+}
+
+
+/*Tipos*/
+.Grass{
+    background-color: #1fc05d;
+    border: 3px solid #022d1255;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-align: center;}
+.Fire{
+    background-color: #bf212e76;
+    border: 3px solid #BF212E;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-align: center;}
+.Poison{
+    background-color: #602d897a;
+    border: 3px solid #602D89;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-align: center;}
+.Flying{
+    background-color: #99b8cd60;
+    border: 3px solid #99B8CD;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-align: center;}
+.Water{
+    background-color: #1153ec72;
+    border: 3px solid #1154EC;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-align: center;}
+.Bug{
+    background-color: #217a309d;
+    border: 3px solid #217a30;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-align: center;}
+.Normal{
+    background-color: #7a555f96;
+    border: 3px solid #7A555F;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-align: center;}
+.Electric{
+    background-color: #f2e52ea8;
+    border: 3px solid #F2E52E;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-align: center;}
+.Ground{
+    background-color: #aa7024a6;
+    border: 3px solid #AA7024;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-align: center;}
+.Fairy{
+    background-color: #971c43b1;
+    border: 3px solid #971C43;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-align: center;}
+.Fighting{
+    background-color: #a1412ba6;
+    border: 3px solid #A1412B;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-align: center;}
+.Psychic{
+    background-color: #ad2a70ac;
+    border: 3px solid #AD2A70;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-align: center;}
+.Rock{
+    background-color: #4A180E;
+    border: 3px solid #4A180E;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-align: center;}
+.Steel{
+    background-color: #637a70a3;
+    border: 3px solid #637A70;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-align: center;}
+.Ice{
+    background-color: #8bd8fca3;
+    border: 3px solid #8BD9FC;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-align: center;}
+.Ghost{
+    background-color: #333370ad;
+    border: 3px solid #333370;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-align: center;}
+.Dragon{
+    background-color: #3e949db0;
+    border: 3px solid #3E939D;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-align: center;}

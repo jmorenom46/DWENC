@@ -66,3 +66,7 @@ function Continuar() {
   document.cookie = `PokemonMaquina=${pokemonData}; ${expires}; path=/`;
   window.location.href = "../Combate/Combate.html";
 }
+
+function Mostrar(){
+  
+}

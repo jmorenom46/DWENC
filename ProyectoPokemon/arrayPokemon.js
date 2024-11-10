@@ -8,10 +8,10 @@ const pokemons = [
     defense: 49,
     hp: 45,
     moves: [
-      { move: "Placaje", move_dmg: 40 },
-      { move: "Látigo Cepa", move_dmg: 20 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Absorber", move_dmg: 20 },
+      { move: "Placaje", move_dmg: 40, type: "Normal" },
+      { move: "Látigo Cepa", move_dmg: 20, type: "Grass" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Absorber", move_dmg: 20, type: "Grass" },
     ],
   },
   {
@@ -23,10 +23,10 @@ const pokemons = [
     defense: 63,
     hp: 60,
     moves: [
-      { move: "Placaje", move_dmg: 40 },
-      { move: "Látigo Cepa", move_dmg: 20 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Drenadoras", move_dmg: 10 },
+      { move: "Placaje", move_dmg: 40, type: "Normal" },
+      { move: "Látigo Cepa", move_dmg: 20, type: "Grass" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Drenadoras", move_dmg: 10, type: "Grass" },
     ],
   },
   {
@@ -38,10 +38,10 @@ const pokemons = [
     defense: 83,
     hp: 80,
     moves: [
-      { move: "Placaje", move_dmg: 40 },
-      { move: "Látigo Cepa", move_dmg: 20 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Drenadoras", move_dmg: 10 },
+      { move: "Placaje", move_dmg: 40, type: "Normal" },
+      { move: "Látigo Cepa", move_dmg: 20, type: "Grass" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Drenadoras", move_dmg: 10, type: "Grass" },
     ],
   },
   {
@@ -53,10 +53,10 @@ const pokemons = [
     defense: 43,
     hp: 39,
     moves: [
-      { move: "Arañazo", move_dmg: 40 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Embestir", move_dmg: 40 },
-      { move: "Llamarada", move_dmg: 95 },
+      { move: "Arañazo", move_dmg: 40, type: "Normal" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Embestir", move_dmg: 40, type: "Normal" },
+      { move: "Llamarada", move_dmg: 95, type: "Fire" },
     ],
   },
   {
@@ -68,10 +68,10 @@ const pokemons = [
     defense: 58,
     hp: 58,
     moves: [
-      { move: "Arañazo", move_dmg: 40 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Embestir", move_dmg: 40 },
-      { move: "Llamarada", move_dmg: 95 },
+      { move: "Arañazo", move_dmg: 40, type: "Normal" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Embestir", move_dmg: 40, type: "Normal" },
+      { move: "Llamarada", move_dmg: 95, type: "Fire" },
     ],
   },
   {
@@ -83,10 +83,10 @@ const pokemons = [
     defense: 78,
     hp: 78,
     moves: [
-      { move: "Arañazo", move_dmg: 40 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Embestir", move_dmg: 40 },
-      { move: "Llamarada", move_dmg: 95 },
+      { move: "Arañazo", move_dmg: 40, type: "Normal" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Embestir", move_dmg: 40, type: "Normal" },
+      { move: "Llamarada", move_dmg: 95, type: "Fire" },
     ],
   },
   {
@@ -98,10 +98,10 @@ const pokemons = [
     defense: 65,
     hp: 44,
     moves: [
-      { move: "Placaje", move_dmg: 40 },
-      { move: "Burbuja", move_dmg: 20 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Pistola Agua", move_dmg: 40 },
+      { move: "Placaje", move_dmg: 40, type: "Normal" },
+      { move: "Burbuja", move_dmg: 20, type: "Water" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Pistola Agua", move_dmg: 40, type: "Water" },
     ],
   },
   {
@@ -113,10 +113,10 @@ const pokemons = [
     defense: 80,
     hp: 59,
     moves: [
-      { move: "Placaje", move_dmg: 40 },
-      { move: "Burbuja", move_dmg: 20 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Pistola Agua", move_dmg: 40 },
+      { move: "Placaje", move_dmg: 40, type: "Normal" },
+      { move: "Burbuja", move_dmg: 20, type: "Water" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Pistola Agua", move_dmg: 40, type: "Water" },
     ],
   },
   {
@@ -128,10 +128,10 @@ const pokemons = [
     defense: 100,
     hp: 79,
     moves: [
-      { move: "Placaje", move_dmg: 40 },
-      { move: "Burbuja", move_dmg: 20 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Pistola Agua", move_dmg: 40 },
+      { move: "Placaje", move_dmg: 40, type: "Normal" },
+      { move: "Burbuja", move_dmg: 20, type: "Water" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Pistola Agua", move_dmg: 40, type: "Water" },
     ],
   },
   {
@@ -143,14 +143,8 @@ const pokemons = [
     defense: 35,
     hp: 45,
     moves: [
-      {
-        move: "Placaje",
-        dmg: 20,
-      },
-      {
-        move: "Hilo Sedoso",
-        dmg: 0,
-      },
+      { move: "Placaje", dmg: 20, type: "Normal" },
+      { move: "Hilo Sedoso", dmg: 0, type: "Bug" },
     ],
   },
   {
@@ -162,14 +156,8 @@ const pokemons = [
     defense: 55,
     hp: 50,
     moves: [
-      {
-        move: "Placaje",
-        dmg: 20,
-      },
-      {
-        move: "Hilo Sedoso",
-        dmg: 0,
-      },
+      { move: "Placaje", dmg: 20, type: "Normal" },
+      { move: "Hilo Sedoso", dmg: 0, type: "Bug" },
     ],
   },
   {
@@ -181,10 +169,10 @@ const pokemons = [
     defense: 50,
     hp: 60,
     moves: [
-      { move: "Tornado", move_dmg: 40 },
-      { move: "Psíquico", move_dmg: 90 },
-      { move: "Paralizador", move_dmg: 0 },
-      { move: "Viento Plata", move_dmg: 60 },
+      { move: "Tornado", move_dmg: 40, type: "Flying" },
+      { move: "Psíquico", move_dmg: 90, type: "Psychic" },
+      { move: "Paralizador", move_dmg: 0, type: "Psychic" },
+      { move: "Viento Plata", move_dmg: 60, type: "Flying" },
     ],
   },
   {
@@ -196,9 +184,9 @@ const pokemons = [
     defense: 30,
     hp: 40,
     moves: [
-      { move: "Picotazo Veneno", move_dmg: 15 },
-      { move: "Desenrollar", move_dmg: 20 },
-      { move: "Picotazo", move_dmg: 20 },
+      { move: "Picotazo Veneno", move_dmg: 15, type: "Poison" },
+      { move: "Desenrollar", move_dmg: 20, type: "Bug" },
+      { move: "Picotazo", move_dmg: 20, type: "Normal" },
     ],
   },
   {
@@ -209,7 +197,7 @@ const pokemons = [
     attack: 25,
     defense: 50,
     hp: 45,
-    moves: [{ move: "Fortaleza", move_dmg: 0 }],
+    moves: [{ move: "Fortaleza", move_dmg: 0, type: "Normal" }],
   },
   {
     id: 15,
@@ -220,10 +208,10 @@ const pokemons = [
     defense: 40,
     hp: 65,
     moves: [
-      { move: "Picotazo Veneno", move_dmg: 15 },
-      { move: "Tijera X", move_dmg: 80 },
-      { move: "Doble Filo", move_dmg: 90 },
-      { move: "Pico Taladro", move_dmg: 70 },
+      { move: "Picotazo Veneno", move_dmg: 15, type: "Poison" },
+      { move: "Tijera X", move_dmg: 80, type: "Bug" },
+      { move: "Doble Filo", move_dmg: 90, type: "Normal" },
+      { move: "Pico Taladro", move_dmg: 70, type: "Flying" },
     ],
   },
   {
@@ -235,10 +223,10 @@ const pokemons = [
     defense: 40,
     hp: 40,
     moves: [
-      { move: "Placaje", move_dmg: 40 },
-      { move: "Giro Aéreo", move_dmg: 60 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Ataque Rápido", move_dmg: 40 },
+      { move: "Placaje", move_dmg: 40, type: "Normal" },
+      { move: "Giro Aéreo", move_dmg: 60, type: "Flying" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Ataque Rápido", move_dmg: 40, type: "Normal" },
     ],
   },
   {
@@ -250,10 +238,10 @@ const pokemons = [
     defense: 55,
     hp: 63,
     moves: [
-      { move: "Placaje", move_dmg: 40 },
-      { move: "Giro Aéreo", move_dmg: 60 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Ataque Rápido", move_dmg: 40 },
+      { move: "Placaje", move_dmg: 40, type: "Normal" },
+      { move: "Giro Aéreo", move_dmg: 60, type: "Flying" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Ataque Rápido", move_dmg: 40, type: "Normal" },
     ],
   },
   {
@@ -265,10 +253,10 @@ const pokemons = [
     defense: 75,
     hp: 83,
     moves: [
-      { move: "Placaje", move_dmg: 40 },
-      { move: "Giro Aéreo", move_dmg: 60 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Ataque Rápido", move_dmg: 40 },
+      { move: "Placaje", move_dmg: 40, type: "Normal" },
+      { move: "Giro Aéreo", move_dmg: 60, type: "Flying" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Ataque Rápido", move_dmg: 40, type: "Normal" },
     ],
   },
   {
@@ -280,9 +268,9 @@ const pokemons = [
     defense: 35,
     hp: 30,
     moves: [
-      { move: "Tacleada", move_dmg: 40 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Bofetón", move_dmg: 15 },
+      { move: "Tacleada", move_dmg: 40, type: "Normal" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Bofetón", move_dmg: 15, type: "Normal" },
     ],
   },
   {
@@ -294,9 +282,9 @@ const pokemons = [
     defense: 60,
     hp: 55,
     moves: [
-      { move: "Tacleada", move_dmg: 40 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Bofetón", move_dmg: 15 },
+      { move: "Tacleada", move_dmg: 40, type: "Normal" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Bofetón", move_dmg: 15, type: "Normal" },
     ],
   },
   {
@@ -308,10 +296,10 @@ const pokemons = [
     defense: 30,
     hp: 40,
     moves: [
-      { move: "Ataque Rápido", move_dmg: 40 },
-      { move: "Pico Taladro", move_dmg: 70 },
-      { move: "Ataque Ala", move_dmg: 60 },
-      { move: "Ala de Acero", move_dmg: 50 },
+      { move: "Ataque Rápido", move_dmg: 40, type: "Normal" },
+      { move: "Pico Taladro", move_dmg: 70, type: "Flying" },
+      { move: "Ataque Ala", move_dmg: 60, type: "Flying" },
+      { move: "Ala de Acero", move_dmg: 50, type: "Steel" },
     ],
   },
   {
@@ -323,10 +311,10 @@ const pokemons = [
     defense: 65,
     hp: 65,
     moves: [
-      { move: "Pico Taladro", move_dmg: 70 },
-      { move: "Ataque Ala", move_dmg: 60 },
-      { move: "Hiperrayo", move_dmg: 90 },
-      { move: "Tajo Aéreo", move_dmg: 60 },
+      { move: "Pico Taladro", move_dmg: 70, type: "Flying" },
+      { move: "Ataque Ala", move_dmg: 60, type: "Flying" },
+      { move: "Hiperrayo", move_dmg: 90, type: "Electric" },
+      { move: "Tajo Aéreo", move_dmg: 60, type: "Flying" },
     ],
   },
   {
@@ -338,10 +326,10 @@ const pokemons = [
     defense: 44,
     hp: 35,
     moves: [
-      { move: "Constricción", move_dmg: 20 },
-      { move: "Picotazo Veneno", move_dmg: 15 },
-      { move: "Ácido", move_dmg: 40 },
-      { move: "Cola Veneno", move_dmg: 60 },
+      { move: "Constricción", move_dmg: 20, type: "Normal" },
+      { move: "Picotazo Veneno", move_dmg: 15, type: "Poison" },
+      { move: "Ácido", move_dmg: 40, type: "Poison" },
+      { move: "Cola Veneno", move_dmg: 60, type: "Poison" },
     ],
   },
   {
@@ -353,10 +341,10 @@ const pokemons = [
     defense: 69,
     hp: 60,
     moves: [
-      { move: "Mordisco", move_dmg: 60 },
-      { move: "Cola Veneno", move_dmg: 60 },
-      { move: "Ácido", move_dmg: 40 },
-      { move: "Bofetón Lodo", move_dmg: 20 },
+      { move: "Mordisco", move_dmg: 60, type: "Normal" },
+      { move: "Cola Veneno", move_dmg: 60, type: "Poison" },
+      { move: "Ácido", move_dmg: 40, type: "Poison" },
+      { move: "Bofetón Lodo", move_dmg: 20, type: "Ground" },
     ],
   },
   {
@@ -368,10 +356,10 @@ const pokemons = [
     defense: 40,
     hp: 35,
     moves: [
-      { move: "Impactrueno", move_dmg: 40 },
-      { move: "Rayo", move_dmg: 60 },
-      { move: "Cola Férrea", move_dmg: 50 },
-      { move: "Onda Trueno", move_dmg: 0 },
+      { move: "Impactrueno", move_dmg: 40, type: "Electric" },
+      { move: "Rayo", move_dmg: 60, type: "Electric" },
+      { move: "Cola Férrea", move_dmg: 50, type: "Steel" },
+      { move: "Onda Trueno", move_dmg: 0, type: "Electric" },
     ],
   },
   {
@@ -383,10 +371,10 @@ const pokemons = [
     defense: 55,
     hp: 60,
     moves: [
-      { move: "Impactrueno", move_dmg: 40 },
-      { move: "Rayo", move_dmg: 60 },
-      { move: "Cola Férrea", move_dmg: 50 },
-      { move: "Onda Trueno", move_dmg: 0 },
+      { move: "Impactrueno", move_dmg: 40, type: "Electric" },
+      { move: "Rayo", move_dmg: 60, type: "Electric" },
+      { move: "Cola Férrea", move_dmg: 50, type: "Steel" },
+      { move: "Onda Trueno", move_dmg: 0, type: "Electric" },
     ],
   },
   {
@@ -398,10 +386,10 @@ const pokemons = [
     defense: 85,
     hp: 50,
     moves: [
-      { move: "Arañazo", move_dmg: 40 },
-      { move: "Bofetón Lodo", move_dmg: 20 },
-      { move: "Excavar", move_dmg: 80 },
-      { move: "Garra Metal", move_dmg: 50 },
+      { move: "Arañazo", move_dmg: 40, type: "Normal" },
+      { move: "Bofetón Lodo", move_dmg: 20, type: "Ground" },
+      { move: "Excavar", move_dmg: 80, type: "Ground" },
+      { move: "Garra Metal", move_dmg: 50, type: "Steel" },
     ],
   },
   {
@@ -413,10 +401,10 @@ const pokemons = [
     defense: 110,
     hp: 75,
     moves: [
-      { move: "Garra Metal", move_dmg: 50 },
-      { move: "Terremoto", move_dmg: 80 },
-      { move: "Golpe Furia", move_dmg: 45 },
-      { move: "Cuchillada", move_dmg: 60 },
+      { move: "Garra Metal", move_dmg: 50, type: "Steel" },
+      { move: "Terremoto", move_dmg: 80, type: "Ground" },
+      { move: "Golpe Furia", move_dmg: 45, type: "Normal" },
+      { move: "Cuchillada", move_dmg: 60, type: "Normal" },
     ],
   },
   {
@@ -428,10 +416,10 @@ const pokemons = [
     defense: 52,
     hp: 55,
     moves: [
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Picotazo Veneno", move_dmg: 15 },
-      { move: "Doble Patada", move_dmg: 30 },
-      { move: "Bofetón Lodo", move_dmg: 20 },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Picotazo Veneno", move_dmg: 15, type: "Poison" },
+      { move: "Doble Patada", move_dmg: 30, type: "Fighting" },
+      { move: "Bofetón Lodo", move_dmg: 20, type: "Ground" },
     ],
   },
   {
@@ -443,10 +431,10 @@ const pokemons = [
     defense: 67,
     hp: 70,
     moves: [
-      { move: "Doble Patada", move_dmg: 30 },
-      { move: "Mordisco", move_dmg: 60 },
-      { move: "Ácido", move_dmg: 40 },
-      { move: "Ataque Furia", move_dmg: 45 },
+      { move: "Doble Patada", move_dmg: 30, type: "Fighting" },
+      { move: "Mordisco", move_dmg: 60, type: "Normal" },
+      { move: "Ácido", move_dmg: 40, type: "Poison" },
+      { move: "Ataque Furia", move_dmg: 45, type: "Normal" },
     ],
   },
   {
@@ -458,10 +446,10 @@ const pokemons = [
     defense: 87,
     hp: 90,
     moves: [
-      { move: "Terremoto", move_dmg: 80 },
-      { move: "Golpe Cuerpo", move_dmg: 60 },
-      { move: "Doble Patada", move_dmg: 30 },
-      { move: "Roca Afilada", move_dmg: 50 },
+      { move: "Terremoto", move_dmg: 80, type: "Ground" },
+      { move: "Golpe Cuerpo", move_dmg: 60, type: "Normal" },
+      { move: "Doble Patada", move_dmg: 30, type: "Fighting" },
+      { move: "Roca Afilada", move_dmg: 50, type: "Rock" },
     ],
   },
   {
@@ -473,10 +461,10 @@ const pokemons = [
     defense: 40,
     hp: 46,
     moves: [
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Picotazo Veneno", move_dmg: 15 },
-      { move: "Ataque Furia", move_dmg: 45 },
-      { move: "Doble Patada", move_dmg: 30 },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Picotazo Veneno", move_dmg: 15, type: "Poison" },
+      { move: "Ataque Furia", move_dmg: 45, type: "Normal" },
+      { move: "Doble Patada", move_dmg: 30, type: "Fighting" },
     ],
   },
   {
@@ -488,10 +476,10 @@ const pokemons = [
     defense: 57,
     hp: 61,
     moves: [
-      { move: "Mordisco", move_dmg: 60 },
-      { move: "Picotazo Veneno", move_dmg: 15 },
-      { move: "Ataque Furia", move_dmg: 45 },
-      { move: "Doble Patada", move_dmg: 30 },
+      { move: "Mordisco", move_dmg: 60, type: "Normal" },
+      { move: "Picotazo Veneno", move_dmg: 15, type: "Poison" },
+      { move: "Ataque Furia", move_dmg: 45, type: "Normal" },
+      { move: "Doble Patada", move_dmg: 30, type: "Fighting" },
     ],
   },
   {
@@ -503,10 +491,10 @@ const pokemons = [
     defense: 77,
     hp: 81,
     moves: [
-      { move: "Terratemblor", move_dmg: 80 },
-      { move: "Golpe Karate", move_dmg: 50 },
-      { move: "Colmillo Veneno", move_dmg: 65 },
-      { move: "Megacuerno", move_dmg: 70 },
+      { move: "Terratemblor", move_dmg: 80, type: "Ground" },
+      { move: "Golpe Karate", move_dmg: 50, type: "Fighting" },
+      { move: "Colmillo Veneno", move_dmg: 65, type: "Poison" },
+      { move: "Megacuerno", move_dmg: 70, type: "Bug" },
     ],
   },
   {
@@ -518,10 +506,10 @@ const pokemons = [
     defense: 48,
     hp: 70,
     moves: [
-      { move: "Encanto", move_dmg: 0 },
-      { move: "Rayo", move_dmg: 60 },
-      { move: "Doble Bofetón", move_dmg: 35 },
-      { move: "Rayo Lunar", move_dmg: 95 },
+      { move: "Encanto", move_dmg: 0, type: "Fairy" },
+      { move: "Rayo", move_dmg: 60, type: "Electric" },
+      { move: "Doble Bofetón", move_dmg: 35, type: "Normal" },
+      { move: "Rayo Lunar", move_dmg: 95, type: "Fairy" },
     ],
   },
   {
@@ -533,10 +521,10 @@ const pokemons = [
     defense: 73,
     hp: 95,
     moves: [
-      { move: "Doble Bofetón", move_dmg: 35 },
-      { move: "Eco Metálico", move_dmg: 0 },
-      { move: "Doble Rayo", move_dmg: 70 },
-      { move: "Meteorobola", move_dmg: 60 },
+      { move: "Doble Bofetón", move_dmg: 35, type: "Normal" },
+      { move: "Eco Metálico", move_dmg: 0, type: "Steel" },
+      { move: "Doble Rayo", move_dmg: 70, type: "Electric" },
+      { move: "Meteorobola", move_dmg: 60, type: "Normal" },
     ],
   },
   {
@@ -548,10 +536,10 @@ const pokemons = [
     defense: 40,
     hp: 38,
     moves: [
-      { move: "Ascuas", move_dmg: 40 },
-      { move: "Llamarada", move_dmg: 90 },
-      { move: "Ataque Rápido", move_dmg: 40 },
-      { move: "Hipnosis", move_dmg: 0 },
+      { move: "Ascuas", move_dmg: 40, type: "Fire" },
+      { move: "Llamarada", move_dmg: 90, type: "Fire" },
+      { move: "Ataque Rápido", move_dmg: 40, type: "Normal", type: "Normal" },
+      { move: "Hipnosis", move_dmg: 0, type: "Psychic" },
     ],
   },
   {
@@ -563,10 +551,10 @@ const pokemons = [
     defense: 75,
     hp: 73,
     moves: [
-      { move: "Llamarada", move_dmg: 90 },
-      { move: "Luz Mística", move_dmg: 60 },
-      { move: "Hipnosis", move_dmg: 0 },
-      { move: "Colmillo Ígneo", move_dmg: 65 },
+      { move: "Llamarada", move_dmg: 90, type: "Fire" },
+      { move: "Luz Mística", move_dmg: 60, type: "Psychic" },
+      { move: "Hipnosis", move_dmg: 0, type: "Psychic" },
+      { move: "Colmillo Ígneo", move_dmg: 65, type: "Fire" },
     ],
   },
   {
@@ -578,10 +566,10 @@ const pokemons = [
     defense: 20,
     hp: 115,
     moves: [
-      { move: "Canto", move_dmg: 0 },
-      { move: "Bofetón Lodo", move_dmg: 30 },
-      { move: "Rizo Defensa", move_dmg: 0 },
-      { move: "Desenrollar", move_dmg: 25 },
+      { move: "Canto", move_dmg: 0, type: "Fairy" },
+      { move: "Bofetón Lodo", move_dmg: 30, type: "Ground" },
+      { move: "Rizo Defensa", move_dmg: 0, type: "Normal" },
+      { move: "Desenrollar", move_dmg: 25, type: "Normal" },
     ],
   },
   {
@@ -593,10 +581,10 @@ const pokemons = [
     defense: 45,
     hp: 140,
     moves: [
-      { move: "Doble Bofetón", move_dmg: 35 },
-      { move: "Canto", move_dmg: 0 },
-      { move: "Rayo", move_dmg: 60 },
-      { move: "Rayo Solar", move_dmg: 80 },
+      { move: "Doble Bofetón", move_dmg: 35, type: "Normal" },
+      { move: "Canto", move_dmg: 0, type: "Fairy" },
+      { move: "Rayo", move_dmg: 60, type: "Electric" },
+      { move: "Rayo Solar", move_dmg: 80, type: "Grass" },
     ],
   },
   {
@@ -608,9 +596,9 @@ const pokemons = [
     defense: 35,
     hp: 40,
     moves: [
-      { move: "Látigo Cepa", move_dmg: 20 },
-      { move: "Supersónico", move_dmg: 0 },
-      { move: "Ataque Rápido", move_dmg: 40 },
+      { move: "Látigo Cepa", move_dmg: 20, type: "Grass" },
+      { move: "Supersónico", move_dmg: 0, type: "Normal" },
+      { move: "Ataque Rápido", move_dmg: 40, type: "Normal" },
     ],
   },
   {
@@ -622,9 +610,9 @@ const pokemons = [
     defense: 70,
     hp: 75,
     moves: [
-      { move: "Látigo Cepa", move_dmg: 20 },
-      { move: "Supersónico", move_dmg: 0 },
-      { move: "Ataque Rápido", move_dmg: 40 },
+      { move: "Látigo Cepa", move_dmg: 20, type: "Grass" },
+      { move: "Supersónico", move_dmg: 0, type: "Normal" },
+      { move: "Ataque Rápido", move_dmg: 40, type: "Normal" },
     ],
   },
   {
@@ -636,10 +624,10 @@ const pokemons = [
     defense: 55,
     hp: 45,
     moves: [
-      { move: "Absorber", move_dmg: 20 },
-      { move: "Paralizador", move_dmg: 0 },
-      { move: "Bomba Germen", move_dmg: 55 },
-      { move: "Polvo Veneno", move_dmg: 0 },
+      { move: "Absorber", move_dmg: 20, type: "Grass" },
+      { move: "Paralizador", move_dmg: 0, type: "Psychic" },
+      { move: "Bomba Germen", move_dmg: 55, type: "Grass" },
+      { move: "Polvo Veneno", move_dmg: 0, type: "Poison" },
     ],
   },
   {
@@ -651,10 +639,10 @@ const pokemons = [
     defense: 70,
     hp: 60,
     moves: [
-      { move: "Absorber", move_dmg: 20 },
-      { move: "Bomba Germen", move_dmg: 55 },
-      { move: "Polvo Veneno", move_dmg: 0 },
-      { move: "Derribo", move_dmg: 40 },
+      { move: "Absorber", move_dmg: 20, type: "Grass" },
+      { move: "Bomba Germen", move_dmg: 55, type: "Grass" },
+      { move: "Polvo Veneno", move_dmg: 0, type: "Poison" },
+      { move: "Derribo", move_dmg: 40, type: "Normal" },
     ],
   },
   {
@@ -666,10 +654,10 @@ const pokemons = [
     defense: 85,
     hp: 75,
     moves: [
-      { move: "Polvo Veneno", move_dmg: 0 },
-      { move: "Absorber", move_dmg: 20 },
-      { move: "Rayo Solar", move_dmg: 80 },
-      { move: "Bomba Lodo", move_dmg: 65 },
+      { move: "Polvo Veneno", move_dmg: 0, type: "Poison" },
+      { move: "Absorber", move_dmg: 20, type: "Grass" },
+      { move: "Rayo Solar", move_dmg: 80, type: "Grass" },
+      { move: "Bomba Lodo", move_dmg: 65, type: "Poison" },
     ],
   },
   {
@@ -681,10 +669,10 @@ const pokemons = [
     defense: 55,
     hp: 35,
     moves: [
-      { move: "Picotazo", move_dmg: 35 },
-      { move: "Látigo Cepa", move_dmg: 20 },
-      { move: "Polvo Stun", move_dmg: 0 },
-      { move: "Giro Rápido", move_dmg: 20 },
+      { move: "Picotazo", move_dmg: 35, type: "Bug" },
+      { move: "Látigo Cepa", move_dmg: 20, type: "Grass" },
+      { move: "Polvo Stun", move_dmg: 0, type: "Normal" },
+      { move: "Giro Rápido", move_dmg: 20, type: "Normal" },
     ],
   },
   {
@@ -696,10 +684,10 @@ const pokemons = [
     defense: 80,
     hp: 60,
     moves: [
-      { move: "Picotazo", move_dmg: 35 },
-      { move: "Látigo Cepa", move_dmg: 20 },
-      { move: "Polvo Stun", move_dmg: 0 },
-      { move: "Bomba Germen", move_dmg: 55 },
+      { move: "Picotazo", move_dmg: 35, type: "Bug" },
+      { move: "Látigo Cepa", move_dmg: 20, type: "Grass" },
+      { move: "Polvo Stun", move_dmg: 0, type: "Normal" },
+      { move: "Bomba Germen", move_dmg: 55, type: "Grass" },
     ],
   },
   {
@@ -711,10 +699,10 @@ const pokemons = [
     defense: 50,
     hp: 60,
     moves: [
-      { move: "Confusión", move_dmg: 50 },
-      { move: "Polvo Veneno", move_dmg: 0 },
-      { move: "Látigo Cepa", move_dmg: 20 },
-      { move: "Manto de Polvo", move_dmg: 0 },
+      { move: "Confusión", move_dmg: 50, type: "Psychic" },
+      { move: "Polvo Veneno", move_dmg: 0, type: "Poison" },
+      { move: "Látigo Cepa", move_dmg: 20, type: "Grass" },
+      { move: "Manto de Polvo", move_dmg: 0, type: "Normal" },
     ],
   },
   {
@@ -726,10 +714,10 @@ const pokemons = [
     defense: 60,
     hp: 70,
     moves: [
-      { move: "Confusión", move_dmg: 50 },
-      { move: "Bomba Germen", move_dmg: 55 },
-      { move: "Polvo Veneno", move_dmg: 0 },
-      { move: "Bola Sombra", move_dmg: 30 },
+      { move: "Confusión", move_dmg: 50, type: "Psychic" },
+      { move: "Bomba Germen", move_dmg: 55, type: "Grass" },
+      { move: "Polvo Veneno", move_dmg: 0, type: "Poison" },
+      { move: "Bola Sombra", move_dmg: 30, type: "Ghost" },
     ],
   },
   {
@@ -741,10 +729,10 @@ const pokemons = [
     defense: 25,
     hp: 10,
     moves: [
-      { move: "Ataque Rápido", move_dmg: 40 },
-      { move: "Excavar", move_dmg: 60 },
-      { move: "Golpe Cabeza", move_dmg: 50 },
-      { move: "Bomba Fango", move_dmg: 65 },
+      { move: "Ataque Rápido", move_dmg: 40, type: "Normal" },
+      { move: "Excavar", move_dmg: 60, type: "Ground" },
+      { move: "Golpe Cabeza", move_dmg: 50, type: "Normal" },
+      { move: "Bomba Fango", move_dmg: 65, type: "Ground" },
     ],
   },
   {
@@ -756,10 +744,10 @@ const pokemons = [
     defense: 50,
     hp: 35,
     moves: [
-      { move: "Ataque Rápido", move_dmg: 40 },
-      { move: "Excavar", move_dmg: 60 },
-      { move: "Golpe Cabeza", move_dmg: 50 },
-      { move: "Bomba Fango", move_dmg: 65 },
+      { move: "Ataque Rápido", move_dmg: 40, type: "Normal" },
+      { move: "Excavar", move_dmg: 60, type: "Ground" },
+      { move: "Golpe Cabeza", move_dmg: 50, type: "Normal" },
+      { move: "Bomba Fango", move_dmg: 65, type: "Ground" },
     ],
   },
   {
@@ -771,9 +759,9 @@ const pokemons = [
     defense: 35,
     hp: 40,
     moves: [
-      { move: "Arañazo", move_dmg: 40 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Bofetón", move_dmg: 15 },
+      { move: "Arañazo", move_dmg: 40, type: "Normal" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Bofetón", move_dmg: 15, type: "Normal" },
     ],
   },
   {
@@ -785,9 +773,9 @@ const pokemons = [
     defense: 60,
     hp: 65,
     moves: [
-      { move: "Arañazo", move_dmg: 40 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Bofetón", move_dmg: 15 },
+      { move: "Arañazo", move_dmg: 40, type: "Normal" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Bofetón", move_dmg: 15, type: "Normal" },
     ],
   },
   {
@@ -799,10 +787,10 @@ const pokemons = [
     defense: 48,
     hp: 50,
     moves: [
-      { move: "Confusión", move_dmg: 50 },
-      { move: "Poder Psíquico", move_dmg: 90 },
-      { move: "Burbujas", move_dmg: 20 },
-      { move: "Hidropulsor", move_dmg: 40 },
+      { move: "Confusión", move_dmg: 50, type: "Psychic" },
+      { move: "Poder Psíquico", move_dmg: 90, type: "Psychic" },
+      { move: "Burbujas", move_dmg: 20, type: "Water" },
+      { move: "Hidropulsor", move_dmg: 40, type: "Water" },
     ],
   },
   {
@@ -814,10 +802,10 @@ const pokemons = [
     defense: 78,
     hp: 80,
     moves: [
-      { move: "Confusión", move_dmg: 50 },
-      { move: "Poder Psíquico", move_dmg: 90 },
-      { move: "Hidrobomba", move_dmg: 110 },
-      { move: "Puño Hielo", move_dmg: 40 },
+      { move: "Confusión", move_dmg: 50, type: "Psychic" },
+      { move: "Poder Psíquico", move_dmg: 90, type: "Psychic" },
+      { move: "Hidrobomba", move_dmg: 110, type: "Water" },
+      { move: "Puño Hielo", move_dmg: 40, type: "Ice" },
     ],
   },
   {
@@ -829,10 +817,10 @@ const pokemons = [
     defense: 35,
     hp: 40,
     moves: [
-      { move: "Puño Karate", move_dmg: 40 },
-      { move: "Puño Fuego", move_dmg: 40 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Ataque Rápido", move_dmg: 40 },
+      { move: "Puño Karate", move_dmg: 40, type: "Fighting" },
+      { move: "Puño Fuego", move_dmg: 40, type: "Fire" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Ataque Rápido", move_dmg: 40, type: "Normal" },
     ],
   },
   {
@@ -844,10 +832,10 @@ const pokemons = [
     defense: 60,
     hp: 65,
     moves: [
-      { move: "Puño Karate", move_dmg: 40 },
-      { move: "Puño Fuego", move_dmg: 40 },
-      { move: "Puño Hielo", move_dmg: 40 },
-      { move: "Rencor", move_dmg: 0 },
+      { move: "Puño Karate", move_dmg: 40, type: "Fighting" },
+      { move: "Puño Fuego", move_dmg: 40, type: "Fire" },
+      { move: "Puño Hielo", move_dmg: 40, type: "Ice" },
+      { move: "Rencor", move_dmg: 0, type: "Ghost" },
     ],
   },
   {
@@ -859,10 +847,10 @@ const pokemons = [
     defense: 45,
     hp: 55,
     moves: [
-      { move: "Lanzallamas", move_dmg: 60 },
-      { move: "Mordisco", move_dmg: 40 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Armadura", move_dmg: 0 },
+      { move: "Lanzallamas", move_dmg: 60, type: "Fire" },
+      { move: "Mordisco", move_dmg: 40, type: "Normal" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Armadura", move_dmg: 0, type: "Normal" },
     ],
   },
   {
@@ -874,10 +862,10 @@ const pokemons = [
     defense: 80,
     hp: 90,
     moves: [
-      { move: "Ascuas", move_dmg: 40 },
-      { move: "Llamarada", move_dmg: 90 },
-      { move: "Mordisco", move_dmg: 60 },
-      { move: "Velocidad Extrema", move_dmg: 80 },
+      { move: "Ascuas", move_dmg: 40, type: "Fire" },
+      { move: "Llamarada", move_dmg: 90, type: "Fire" },
+      { move: "Mordisco", move_dmg: 60, type: "Normal" },
+      { move: "Velocidad Extrema", move_dmg: 80, type: "Normal" },
     ],
   },
   {
@@ -889,9 +877,9 @@ const pokemons = [
     defense: 40,
     hp: 40,
     moves: [
-      { move: "Placaje", move_dmg: 40 },
-      { move: "Burbuja", move_dmg: 20 },
-      { move: "Gruñido", move_dmg: 0 },
+      { move: "Placaje", move_dmg: 40, type: "Normal" },
+      { move: "Burbuja", move_dmg: 20, type: "Water" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
     ],
   },
   {
@@ -903,10 +891,10 @@ const pokemons = [
     defense: 65,
     hp: 65,
     moves: [
-      { move: "Placaje", move_dmg: 40 },
-      { move: "Burbuja", move_dmg: 20 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Puño Agua", move_dmg: 50 },
+      { move: "Placaje", move_dmg: 40, type: "Normal" },
+      { move: "Burbuja", move_dmg: 20, type: "Water" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Puño Agua", move_dmg: 50, type: "Water" },
     ],
   },
   {
@@ -918,10 +906,10 @@ const pokemons = [
     defense: 95,
     hp: 90,
     moves: [
-      { move: "Placaje", move_dmg: 40 },
-      { move: "Burbuja", move_dmg: 20 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Puño Agua", move_dmg: 50 },
+      { move: "Placaje", move_dmg: 40, type: "Normal" },
+      { move: "Burbuja", move_dmg: 20, type: "Water" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Puño Agua", move_dmg: 50, type: "Water" },
     ],
   },
   {
@@ -933,10 +921,10 @@ const pokemons = [
     defense: 15,
     hp: 25,
     moves: [
-      { move: "Confusión", move_dmg: 50 },
-      { move: "Psíquico", move_dmg: 90 },
-      { move: "Rayo", move_dmg: 60 },
-      { move: "Doble Equipo", move_dmg: 0 },
+      { move: "Confusión", move_dmg: 50, type: "Psychic" },
+      { move: "Psíquico", move_dmg: 90, type: "Psychic" },
+      { move: "Rayo", move_dmg: 60, type: "Electric" },
+      { move: "Doble Equipo", move_dmg: 0, type: "Normal" },
     ],
   },
   {
@@ -948,10 +936,10 @@ const pokemons = [
     defense: 30,
     hp: 40,
     moves: [
-      { move: "Confusión", move_dmg: 50 },
-      { move: "Psíquico", move_dmg: 90 },
-      { move: "Rayo", move_dmg: 60 },
-      { move: "Doble Equipo", move_dmg: 0 },
+      { move: "Confusión", move_dmg: 50, type: "Psychic" },
+      { move: "Psíquico", move_dmg: 90, type: "Psychic" },
+      { move: "Rayo", move_dmg: 60, type: "Electric" },
+      { move: "Doble Equipo", move_dmg: 0, type: "Normal" },
     ],
   },
   {
@@ -963,10 +951,10 @@ const pokemons = [
     defense: 45,
     hp: 55,
     moves: [
-      { move: "Confusión", move_dmg: 50 },
-      { move: "Psíquico", move_dmg: 90 },
-      { move: "Rayo", move_dmg: 60 },
-      { move: "Doble Equipo", move_dmg: 0 },
+      { move: "Confusión", move_dmg: 50, type: "Psychic" },
+      { move: "Psíquico", move_dmg: 90, type: "Psychic" },
+      { move: "Rayo", move_dmg: 60, type: "Electric" },
+      { move: "Doble Equipo", move_dmg: 0, type: "Normal" },
     ],
   },
   {
@@ -978,10 +966,10 @@ const pokemons = [
     defense: 50,
     hp: 70,
     moves: [
-      { move: "Golpe Bajo", move_dmg: 30 },
-      { move: "Golpe Cuerpo", move_dmg: 50 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Puño Karate", move_dmg: 50 },
+      { move: "Golpe Bajo", move_dmg: 30, type: "Fighting" },
+      { move: "Golpe Cuerpo", move_dmg: 50, type: "Fighting" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Puño Karate", move_dmg: 50, type: "Fighting" },
     ],
   },
   {
@@ -993,10 +981,10 @@ const pokemons = [
     defense: 70,
     hp: 80,
     moves: [
-      { move: "Golpe Bajo", move_dmg: 30 },
-      { move: "Golpe Cuerpo", move_dmg: 50 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Puño Karate", move_dmg: 50 },
+      { move: "Golpe Bajo", move_dmg: 30, type: "Fighting" },
+      { move: "Golpe Cuerpo", move_dmg: 50, type: "Fighting" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Puño Karate", move_dmg: 50, type: "Fighting" },
     ],
   },
   {
@@ -1008,10 +996,10 @@ const pokemons = [
     defense: 80,
     hp: 90,
     moves: [
-      { move: "Golpe Bajo", move_dmg: 30 },
-      { move: "Golpe Cuerpo", move_dmg: 50 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Puño Karate", move_dmg: 50 },
+      { move: "Golpe Bajo", move_dmg: 30, type: "Fighting" },
+      { move: "Golpe Cuerpo", move_dmg: 50, type: "Fighting" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Puño Karate", move_dmg: 50, type: "Fighting" },
     ],
   },
   {
@@ -1023,9 +1011,9 @@ const pokemons = [
     defense: 35,
     hp: 50,
     moves: [
-      { move: "Látigo Cepa", move_dmg: 20 },
-      { move: "Absorber", move_dmg: 20 },
-      { move: "Gruñido", move_dmg: 0 },
+      { move: "Látigo Cepa", move_dmg: 20, type: "Grass" },
+      { move: "Absorber", move_dmg: 20, type: "Grass" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
     ],
   },
   {
@@ -1037,10 +1025,10 @@ const pokemons = [
     defense: 50,
     hp: 65,
     moves: [
-      { move: "Látigo Cepa", move_dmg: 20 },
-      { move: "Absorber", move_dmg: 20 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Drenadoras", move_dmg: 10 },
+      { move: "Látigo Cepa", move_dmg: 20, type: "Grass" },
+      { move: "Absorber", move_dmg: 20, type: "Grass" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Drenadoras", move_dmg: 10, type: "Grass" },
     ],
   },
   {
@@ -1052,10 +1040,10 @@ const pokemons = [
     defense: 65,
     hp: 80,
     moves: [
-      { move: "Látigo Cepa", move_dmg: 20 },
-      { move: "Absorber", move_dmg: 20 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Drenadoras", move_dmg: 10 },
+      { move: "Látigo Cepa", move_dmg: 20, type: "Grass" },
+      { move: "Absorber", move_dmg: 20, type: "Grass" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Drenadoras", move_dmg: 10, type: "Grass" },
     ],
   },
   {
@@ -1067,10 +1055,10 @@ const pokemons = [
     defense: 35,
     hp: 40,
     moves: [
-      { move: "Chorro de Agua", move_dmg: 40 },
-      { move: "Pico Veneno", move_dmg: 40 },
-      { move: "Burbujas", move_dmg: 20 },
-      { move: "Puño Sombra", move_dmg: 40 },
+      { move: "Chorro de Agua", move_dmg: 40, type: "Water" },
+      { move: "Pico Veneno", move_dmg: 40, type: "Poison" },
+      { move: "Burbujas", move_dmg: 20, type: "Water" },
+      { move: "Puño Sombra", move_dmg: 40, type: "Fighting" },
     ],
   },
   {
@@ -1082,10 +1070,10 @@ const pokemons = [
     defense: 40,
     hp: 50,
     moves: [
-      { move: "Chorro de Agua", move_dmg: 40 },
-      { move: "Hidrobomba", move_dmg: 110 },
-      { move: "Puño Hielo", move_dmg: 40 },
-      { move: "Pico Veneno", move_dmg: 40 },
+      { move: "Chorro de Agua", move_dmg: 40, type: "Water" },
+      { move: "Hidrobomba", move_dmg: 110, type: "Water" },
+      { move: "Puño Hielo", move_dmg: 40, type: "Ice" },
+      { move: "Pico Veneno", move_dmg: 40, type: "Poison" },
     ],
   },
   {
@@ -1097,9 +1085,9 @@ const pokemons = [
     defense: 45,
     hp: 55,
     moves: [
-      { move: "Tacleada", move_dmg: 40 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Roca Afilada", move_dmg: 50 },
+      { move: "Tacleada", move_dmg: 40, type: "Normal" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Roca Afilada", move_dmg: 50, type: "Rock" },
     ],
   },
   {
@@ -1111,9 +1099,9 @@ const pokemons = [
     defense: 50,
     hp: 60,
     moves: [
-      { move: "Tacleada", move_dmg: 40 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Roca Afilada", move_dmg: 50 },
+      { move: "Tacleada", move_dmg: 40, type: "Normal" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Roca Afilada", move_dmg: 50, type: "Rock" },
     ],
   },
   {
@@ -1125,9 +1113,9 @@ const pokemons = [
     defense: 55,
     hp: 65,
     moves: [
-      { move: "Tacleada", move_dmg: 40 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Roca Afilada", move_dmg: 50 },
+      { move: "Tacleada", move_dmg: 40, type: "Normal" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Roca Afilada", move_dmg: 50, type: "Rock" },
     ],
   },
   {
@@ -1139,10 +1127,10 @@ const pokemons = [
     defense: 45,
     hp: 50,
     moves: [
-      { move: "Llamarada", move_dmg: 40 },
-      { move: "Giro Fuego", move_dmg: 35 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Ascuas", move_dmg: 40 },
+      { move: "Llamarada", move_dmg: 40, type: "Fire" },
+      { move: "Giro Fuego", move_dmg: 35, type: "Fire" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal", type: "Normal" },
+      { move: "Ascuas", move_dmg: 40, type: "Fire" },
     ],
   },
   {
@@ -1154,10 +1142,10 @@ const pokemons = [
     defense: 55,
     hp: 65,
     moves: [
-      { move: "Llamarada", move_dmg: 40 },
-      { move: "Corte Fuego", move_dmg: 50 },
-      { move: "Giro Fuego", move_dmg: 35 },
-      { move: "Ardor", move_dmg: 45 },
+      { move: "Llamarada", move_dmg: 40, type: "Fire" },
+      { move: "Corte Fuego", move_dmg: 50, type: "Fire" },
+      { move: "Giro Fuego", move_dmg: 35, type: "Fire" },
+      { move: "Ardor", move_dmg: 45, type: "Fire" },
     ],
   },
   {
@@ -1169,10 +1157,10 @@ const pokemons = [
     defense: 45,
     hp: 50,
     moves: [
-      { move: "Confusión", move_dmg: 50 },
-      { move: "Poder Psíquico", move_dmg: 90 },
-      { move: "Burbujas", move_dmg: 20 },
-      { move: "Hidropulsor", move_dmg: 40 },
+      { move: "Confusión", move_dmg: 50, type: "Psychic" },
+      { move: "Poder Psíquico", move_dmg: 90, type: "Psychic" },
+      { move: "Burbujas", move_dmg: 20, type: "Water" },
+      { move: "Hidropulsor", move_dmg: 40, type: "Water" },
     ],
   },
   {
@@ -1184,10 +1172,10 @@ const pokemons = [
     defense: 50,
     hp: 65,
     moves: [
-      { move: "Confusión", move_dmg: 50 },
-      { move: "Poder Psíquico", move_dmg: 90 },
-      { move: "Hidrobomba", move_dmg: 110 },
-      { move: "Puño Hielo", move_dmg: 40 },
+      { move: "Confusión", move_dmg: 50, type: "Psychic" },
+      { move: "Poder Psíquico", move_dmg: 90, type: "Psychic" },
+      { move: "Hidrobomba", move_dmg: 110, type: "Water" },
+      { move: "Puño Hielo", move_dmg: 40, type: "Ice" },
     ],
   },
   {
@@ -1199,10 +1187,10 @@ const pokemons = [
     defense: 40,
     hp: 35,
     moves: [
-      { move: "Chispazo", move_dmg: 40 },
-      { move: "Puño Trueno", move_dmg: 40 },
-      { move: "Sorpresa", move_dmg: 0 },
-      { move: "Puño Rayo", move_dmg: 40 },
+      { move: "Chispazo", move_dmg: 40, type: "Electric" },
+      { move: "Puño Trueno", move_dmg: 40, type: "Electric" },
+      { move: "Sorpresa", move_dmg: 0, type: "Electric" },
+      { move: "Puño Rayo", move_dmg: 40, type: "Electric" },
     ],
   },
   {
@@ -1214,10 +1202,10 @@ const pokemons = [
     defense: 50,
     hp: 45,
     moves: [
-      { move: "Chispazo", move_dmg: 40 },
-      { move: "Puño Trueno", move_dmg: 40 },
-      { move: "Rayo", move_dmg: 50 },
-      { move: "Puño Rayo", move_dmg: 40 },
+      { move: "Chispazo", move_dmg: 40, type: "Electric" },
+      { move: "Puño Trueno", move_dmg: 40, type: "Electric" },
+      { move: "Rayo", move_dmg: 50, type: "Electric" },
+      { move: "Puño Rayo", move_dmg: 40, type: "Electric" },
     ],
   },
   {
@@ -1229,10 +1217,10 @@ const pokemons = [
     defense: 55,
     hp: 52,
     moves: [
-      { move: "Hoja Afilada", move_dmg: 35 },
-      { move: "Picotazo", move_dmg: 35 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Vuelo", move_dmg: 50 },
+      { move: "Hoja Afilada", move_dmg: 35, type: "Grass" },
+      { move: "Picotazo", move_dmg: 35, type: "Bug" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Vuelo", move_dmg: 50, type: "Flying" },
     ],
   },
   {
@@ -1244,10 +1232,10 @@ const pokemons = [
     defense: 45,
     hp: 65,
     moves: [
-      { move: "Ataque Rápido", move_dmg: 40 },
-      { move: "Picotazo", move_dmg: 35 },
-      { move: "Patada Baja", move_dmg: 35 },
-      { move: "Golpe Bajo", move_dmg: 40 },
+      { move: "Ataque Rápido", move_dmg: 40, type: "Normal" },
+      { move: "Picotazo", move_dmg: 35, type: "Bug" },
+      { move: "Patada Baja", move_dmg: 35, type: "Fighting" },
+      { move: "Golpe Bajo", move_dmg: 40, type: "Fighting" },
     ],
   },
   {
@@ -1259,10 +1247,10 @@ const pokemons = [
     defense: 70,
     hp: 95,
     moves: [
-      { move: "Ataque Rápido", move_dmg: 40 },
-      { move: "Picotazo", move_dmg: 35 },
-      { move: "Patada Baja", move_dmg: 35 },
-      { move: "Golpe Bajo", move_dmg: 40 },
+      { move: "Ataque Rápido", move_dmg: 40, type: "Normal" },
+      { move: "Picotazo", move_dmg: 35, type: "Bug" },
+      { move: "Patada Baja", move_dmg: 35, type: "Fighting" },
+      { move: "Golpe Bajo", move_dmg: 40, type: "Fighting" },
     ],
   },
   {
@@ -1274,10 +1262,10 @@ const pokemons = [
     defense: 55,
     hp: 65,
     moves: [
-      { move: "Chorro de Agua", move_dmg: 40 },
-      { move: "Burbujas", move_dmg: 20 },
-      { move: "Puño Hielo", move_dmg: 40 },
-      { move: "Hidropulsor", move_dmg: 40 },
+      { move: "Chorro de Agua", move_dmg: 40, type: "Water" },
+      { move: "Burbujas", move_dmg: 20, type: "Water" },
+      { move: "Puño Hielo", move_dmg: 40, type: "Ice" },
+      { move: "Hidropulsor", move_dmg: 40, type: "Water" },
     ],
   },
   {
@@ -1289,10 +1277,10 @@ const pokemons = [
     defense: 80,
     hp: 90,
     moves: [
-      { move: "Chorro de Agua", move_dmg: 40 },
-      { move: "Hidrobomba", move_dmg: 110 },
-      { move: "Puño Hielo", move_dmg: 40 },
-      { move: "Aullido", move_dmg: 0 },
+      { move: "Chorro de Agua", move_dmg: 40, type: "Water" },
+      { move: "Hidrobomba", move_dmg: 110, type: "Water" },
+      { move: "Puño Hielo", move_dmg: 40, type: "Ice" },
+      { move: "Aullido", move_dmg: 0, type: "Normal" },
     ],
   },
   {
@@ -1304,10 +1292,10 @@ const pokemons = [
     defense: 50,
     hp: 70,
     moves: [
-      { move: "Golpe Lodo", move_dmg: 40 },
-      { move: "Polvo Veneno", move_dmg: 0 },
-      { move: "Tóxico", move_dmg: 0 },
-      { move: "Maldición", move_dmg: 0 },
+      { move: "Golpe Lodo", move_dmg: 40, type: "Poison" },
+      { move: "Polvo Veneno", move_dmg: 0, type: "Poison" },
+      { move: "Tóxico", move_dmg: 0, type: "Poison" },
+      { move: "Maldición", move_dmg: 0, type: "Ghost" },
     ],
   },
   {
@@ -1319,10 +1307,10 @@ const pokemons = [
     defense: 75,
     hp: 105,
     moves: [
-      { move: "Golpe Lodo", move_dmg: 40 },
-      { move: "Polvo Veneno", move_dmg: 0 },
-      { move: "Tóxico", move_dmg: 0 },
-      { move: "Bomba Lodo", move_dmg: 60 },
+      { move: "Golpe Lodo", move_dmg: 40, type: "Poison" },
+      { move: "Polvo Veneno", move_dmg: 0, type: "Poison" },
+      { move: "Tóxico", move_dmg: 0, type: "Poison" },
+      { move: "Bomba Lodo", move_dmg: 60, type: "Poison" },
     ],
   },
   {
@@ -1334,10 +1322,10 @@ const pokemons = [
     defense: 100,
     hp: 30,
     moves: [
-      { move: "Burbujas", move_dmg: 20 },
-      { move: "Puño Hielo", move_dmg: 40 },
-      { move: "Triturar", move_dmg: 40 },
-      { move: "Rugido", move_dmg: 0 },
+      { move: "Burbujas", move_dmg: 20, type: "Water" },
+      { move: "Puño Hielo", move_dmg: 40, type: "Ice" },
+      { move: "Triturar", move_dmg: 40, type: "Normal" },
+      { move: "Rugido", move_dmg: 0, type: "Normal" },
     ],
   },
   {
@@ -1349,10 +1337,10 @@ const pokemons = [
     defense: 180,
     hp: 50,
     moves: [
-      { move: "Burbujas", move_dmg: 20 },
-      { move: "Hidrobomba", move_dmg: 110 },
-      { move: "Puño Hielo", move_dmg: 40 },
-      { move: "Triturar", move_dmg: 40 },
+      { move: "Burbujas", move_dmg: 20, type: "Water" },
+      { move: "Hidrobomba", move_dmg: 110, type: "Water" },
+      { move: "Puño Hielo", move_dmg: 40, type: "Ice" },
+      { move: "Triturar", move_dmg: 40, type: "Normal" },
     ],
   },
   {
@@ -1364,10 +1352,10 @@ const pokemons = [
     defense: 30,
     hp: 30,
     moves: [
-      { move: "Lanza Fuego", move_dmg: 40 },
-      { move: "Bola Sombra", move_dmg: 30 },
-      { move: "Hipnosis", move_dmg: 0 },
-      { move: "Puño Fuego", move_dmg: 40 },
+      { move: "Lanza Fuego", move_dmg: 40, type: "Fire" },
+      { move: "Bola Sombra", move_dmg: 30, type: "Ghost" },
+      { move: "Hipnosis", move_dmg: 0, type: "Psychic" },
+      { move: "Puño Fuego", move_dmg: 40, type: "Fire" },
     ],
   },
   {
@@ -1379,10 +1367,10 @@ const pokemons = [
     defense: 45,
     hp: 45,
     moves: [
-      { move: "Lengüetazo", move_dmg: 20 },
-      { move: "Hipnosis", move_dmg: 0 },
-      { move: "Bola Sombra", move_dmg: 80 },
-      { move: "Puño Sombra", move_dmg: 50 },
+      { move: "Lengüetazo", move_dmg: 20, type: "Normal" },
+      { move: "Hipnosis", move_dmg: 0, type: "Psychic" },
+      { move: "Bola Sombra", move_dmg: 80, type: "Ghost" },
+      { move: "Puño Sombra", move_dmg: 50, type: "Ghost" },
     ],
   },
   {
@@ -1394,10 +1382,10 @@ const pokemons = [
     defense: 60,
     hp: 60,
     moves: [
-      { move: "Lengüetazo", move_dmg: 20 },
-      { move: "Hipnosis", move_dmg: 0 },
-      { move: "Bola Sombra", move_dmg: 80 },
-      { move: "Puño Sombra", move_dmg: 50 },
+      { move: "Lengüetazo", move_dmg: 20, type: "Normal" },
+      { move: "Hipnosis", move_dmg: 0, type: "Psychic" },
+      { move: "Bola Sombra", move_dmg: 80, type: "Ghost" },
+      { move: "Puño Sombra", move_dmg: 50, type: "Ghost" },
     ],
   },
   {
@@ -1409,10 +1397,10 @@ const pokemons = [
     defense: 160,
     hp: 35,
     moves: [
-      { move: "Tierra Viva", move_dmg: 35 },
-      { move: "Roca Afilada", move_dmg: 50 },
-      { move: "Golpe Cuerpo", move_dmg: 40 },
-      { move: "Gruñido", move_dmg: 0 },
+      { move: "Tierra Viva", move_dmg: 35, type: "Ground" },
+      { move: "Roca Afilada", move_dmg: 50, type: "Rock" },
+      { move: "Golpe Cuerpo", move_dmg: 40, type: "Fighting" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
     ],
   },
   {
@@ -1424,10 +1412,10 @@ const pokemons = [
     defense: 45,
     hp: 60,
     moves: [
-      { move: "Confusión", move_dmg: 50 },
-      { move: "Poder Psíquico", move_dmg: 90 },
-      { move: "Puño Psíquico", move_dmg: 40 },
-      { move: "Hipnosis", move_dmg: 0 },
+      { move: "Confusión", move_dmg: 50, type: "Psychic" },
+      { move: "Poder Psíquico", move_dmg: 90, type: "Psychic" },
+      { move: "Puño Psíquico", move_dmg: 40, type: "Psychic" },
+      { move: "Hipnosis", move_dmg: 0, type: "Psychic" },
     ],
   },
   {
@@ -1439,10 +1427,10 @@ const pokemons = [
     defense: 70,
     hp: 85,
     moves: [
-      { move: "Confusión", move_dmg: 50 },
-      { move: "Poder Psíquico", move_dmg: 90 },
-      { move: "Puño Psíquico", move_dmg: 40 },
-      { move: "Pesadilla", move_dmg: 0 },
+      { move: "Confusión", move_dmg: 50, type: "Psychic" },
+      { move: "Poder Psíquico", move_dmg: 90, type: "Psychic" },
+      { move: "Puño Psíquico", move_dmg: 40, type: "Psychic" },
+      { move: "Pesadilla", move_dmg: 0, type: "Psychic" },
     ],
   },
   {
@@ -1454,10 +1442,10 @@ const pokemons = [
     defense: 90,
     hp: 30,
     moves: [
-      { move: "Pico Acero", move_dmg: 40 },
-      { move: "Burbuja", move_dmg: 20 },
-      { move: "Puño Agua", move_dmg: 40 },
-      { move: "Picotazo", move_dmg: 35 },
+      { move: "Pico Acero", move_dmg: 40, type: "Steel" },
+      { move: "Burbuja", move_dmg: 20, type: "Water" },
+      { move: "Puño Agua", move_dmg: 40, type: "Water" },
+      { move: "Picotazo", move_dmg: 35, type: "Bug" },
     ],
   },
   {
@@ -1469,10 +1457,10 @@ const pokemons = [
     defense: 115,
     hp: 55,
     moves: [
-      { move: "Pico Acero", move_dmg: 40 },
-      { move: "Puño Agua", move_dmg: 40 },
-      { move: "Hidrobomba", move_dmg: 110 },
-      { move: "Triturar", move_dmg: 40 },
+      { move: "Pico Acero", move_dmg: 40, type: "Steel" },
+      { move: "Puño Agua", move_dmg: 40, type: "Water" },
+      { move: "Hidrobomba", move_dmg: 110, type: "Water" },
+      { move: "Triturar", move_dmg: 40, type: "Normal" },
     ],
   },
   {
@@ -1484,10 +1472,10 @@ const pokemons = [
     defense: 50,
     hp: 40,
     moves: [
-      { move: "Chispazo", move_dmg: 40 },
-      { move: "Explosión", move_dmg: 250 },
-      { move: "Puño Trueno", move_dmg: 40 },
-      { move: "Sorpresa", move_dmg: 0 },
+      { move: "Chispazo", move_dmg: 40, type: "Electric" },
+      { move: "Explosión", move_dmg: 250, type: "Normal" },
+      { move: "Puño Trueno", move_dmg: 40, type: "Electric" },
+      { move: "Sorpresa", move_dmg: 0, type: "Electric" },
     ],
   },
   {
@@ -1499,10 +1487,10 @@ const pokemons = [
     defense: 70,
     hp: 60,
     moves: [
-      { move: "Chispazo", move_dmg: 40 },
-      { move: "Puño Trueno", move_dmg: 40 },
-      { move: "Rayo", move_dmg: 50 },
-      { move: "Explosión", move_dmg: 250 },
+      { move: "Chispazo", move_dmg: 40, type: "Electric" },
+      { move: "Puño Trueno", move_dmg: 40, type: "Electric" },
+      { move: "Rayo", move_dmg: 50, type: "Electric" },
+      { move: "Explosión", move_dmg: 250, type: "Normal" },
     ],
   },
   {
@@ -1514,10 +1502,10 @@ const pokemons = [
     defense: 80,
     hp: 60,
     moves: [
-      { move: "Confusión", move_dmg: 50 },
-      { move: "Hipnosis", move_dmg: 0 },
-      { move: "Hoja Afilada", move_dmg: 35 },
-      { move: "Bomba Germen", move_dmg: 55 },
+      { move: "Confusión", move_dmg: 50, type: "Psychic" },
+      { move: "Hipnosis", move_dmg: 0, type: "Psychic" },
+      { move: "Hoja Afilada", move_dmg: 35, type: "Grass" },
+      { move: "Bomba Germen", move_dmg: 55, type: "Grass" },
     ],
   },
   {
@@ -1529,10 +1517,10 @@ const pokemons = [
     defense: 85,
     hp: 95,
     moves: [
-      { move: "Confusión", move_dmg: 50 },
-      { move: "Poder Psíquico", move_dmg: 90 },
-      { move: "Hoja Afilada", move_dmg: 35 },
-      { move: "Bomba Germen", move_dmg: 55 },
+      { move: "Confusión", move_dmg: 50, type: "Psychic" },
+      { move: "Poder Psíquico", move_dmg: 90, type: "Psychic" },
+      { move: "Hoja Afilada", move_dmg: 35, type: "Grass" },
+      { move: "Bomba Germen", move_dmg: 55, type: "Grass" },
     ],
   },
   {
@@ -1544,10 +1532,10 @@ const pokemons = [
     defense: 95,
     hp: 50,
     moves: [
-      { move: "Golpe Cabeza", move_dmg: 40 },
-      { move: "Bola Sombra", move_dmg: 30 },
-      { move: "Puño Hielo", move_dmg: 40 },
-      { move: "Látigo Cepa", move_dmg: 20 },
+      { move: "Golpe Cabeza", move_dmg: 40, type: "Normal" },
+      { move: "Bola Sombra", move_dmg: 30, type: "Ghost" },
+      { move: "Puño Hielo", move_dmg: 40, type: "Ice" },
+      { move: "Látigo Cepa", move_dmg: 20, type: "Grass" },
     ],
   },
   {
@@ -1559,10 +1547,10 @@ const pokemons = [
     defense: 110,
     hp: 60,
     moves: [
-      { move: "Golpe Cabeza", move_dmg: 40 },
-      { move: "Puño Hielo", move_dmg: 40 },
-      { move: "Látigo Cepa", move_dmg: 20 },
-      { move: "Hueso Palo", move_dmg: 50 },
+      { move: "Golpe Cabeza", move_dmg: 40, type: "Normal" },
+      { move: "Puño Hielo", move_dmg: 40, type: "Ice" },
+      { move: "Látigo Cepa", move_dmg: 20, type: "Grass" },
+      { move: "Hueso Palo", move_dmg: 50, type: "Normal" },
     ],
   },
   {
@@ -1574,10 +1562,10 @@ const pokemons = [
     defense: 53,
     hp: 50,
     moves: [
-      { move: "Patada Baja", move_dmg: 35 },
-      { move: "Patada Alta", move_dmg: 60 },
-      { move: "Puño Karate", move_dmg: 40 },
-      { move: "Patada Giro", move_dmg: 50 },
+      { move: "Patada Baja", move_dmg: 35, type: "Fighting" },
+      { move: "Patada Alta", move_dmg: 60, type: "Fighting" },
+      { move: "Puño Karate", move_dmg: 40, type: "Fighting" },
+      { move: "Patada Giro", move_dmg: 50, type: "Fighting" },
     ],
   },
   {
@@ -1589,10 +1577,10 @@ const pokemons = [
     defense: 79,
     hp: 50,
     moves: [
-      { move: "Puño Fuego", move_dmg: 40 },
-      { move: "Puño Trueno", move_dmg: 40 },
-      { move: "Puño Hielo", move_dmg: 40 },
-      { move: "Puño Karate", move_dmg: 40 },
+      { move: "Puño Fuego", move_dmg: 40, type: "Fire" },
+      { move: "Puño Trueno", move_dmg: 40, type: "Electric" },
+      { move: "Puño Hielo", move_dmg: 40, type: "Ice" },
+      { move: "Puño Karate", move_dmg: 40, type: "Fighting" },
     ],
   },
   {
@@ -1604,10 +1592,10 @@ const pokemons = [
     defense: 75,
     hp: 90,
     moves: [
-      { move: "Látigo Cepa", move_dmg: 20 },
-      { move: "Lengüetazo", move_dmg: 15 },
-      { move: "Gruñido", move_dmg: 0 },
-      { move: "Golpe Cuerpo", move_dmg: 40 },
+      { move: "Látigo Cepa", move_dmg: 20, type: "Grass" },
+      { move: "Lengüetazo", move_dmg: 15, type: "Normal" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
+      { move: "Golpe Cuerpo", move_dmg: 40, type: "Fighting" },
     ],
   },
   {
@@ -1619,10 +1607,10 @@ const pokemons = [
     defense: 95,
     hp: 40,
     moves: [
-      { move: "Lanzallamas", move_dmg: 40 },
-      { move: "Polvo Veneno", move_dmg: 0 },
-      { move: "Tóxico", move_dmg: 0 },
-      { move: "Explosión", move_dmg: 250 },
+      { move: "Lanzallamas", move_dmg: 40, type: "Fire" },
+      { move: "Polvo Veneno", move_dmg: 0, type: "Poison" },
+      { move: "Tóxico", move_dmg: 0, type: "Poison" },
+      { move: "Explosión", move_dmg: 250, type: "Normal" },
     ],
   },
   {
@@ -1634,10 +1622,10 @@ const pokemons = [
     defense: 120,
     hp: 65,
     moves: [
-      { move: "Lanzallamas", move_dmg: 40 },
-      { move: "Tóxico", move_dmg: 0 },
-      { move: "Polvo Veneno", move_dmg: 0 },
-      { move: "Explosión", move_dmg: 250 },
+      { move: "Lanzallamas", move_dmg: 40, type: "Fire" },
+      { move: "Tóxico", move_dmg: 0, type: "Poison" },
+      { move: "Polvo Veneno", move_dmg: 0, type: "Poison" },
+      { move: "Explosión", move_dmg: 250, type: "Normal" },
     ],
   },
   {
@@ -1649,10 +1637,10 @@ const pokemons = [
     defense: 95,
     hp: 80,
     moves: [
-      { move: "Tierra Viva", move_dmg: 35 },
-      { move: "Roca Afilada", move_dmg: 50 },
-      { move: "Golpe Cuerpo", move_dmg: 40 },
-      { move: "Gruñido", move_dmg: 0 },
+      { move: "Tierra Viva", move_dmg: 35, type: "Ground" },
+      { move: "Roca Afilada", move_dmg: 50, type: "Rock" },
+      { move: "Golpe Cuerpo", move_dmg: 40, type: "Fighting" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
     ],
   },
   {
@@ -1664,10 +1652,10 @@ const pokemons = [
     defense: 120,
     hp: 105,
     moves: [
-      { move: "Golpe Cabeza", move_dmg: 50 },
-      { move: "Terremoto", move_dmg: 80 },
-      { move: "Megacuerno", move_dmg: 70 },
-      { move: "Derribo", move_dmg: 45 },
+      { move: "Golpe Cabeza", move_dmg: 50, type: "Normal" },
+      { move: "Terremoto", move_dmg: 80, type: "Ground" },
+      { move: "Megacuerno", move_dmg: 70, type: "Bug" },
+      { move: "Derribo", move_dmg: 45, type: "Normal" },
     ],
   },
   {
@@ -1679,10 +1667,10 @@ const pokemons = [
     defense: 5,
     hp: 250,
     moves: [
-      { move: "Doble Bofetón", move_dmg: 35 },
-      { move: "Rayo", move_dmg: 60 },
-      { move: "Canto", move_dmg: 0 },
-      { move: "Pulso Cura", move_dmg: 0 },
+      { move: "Doble Bofetón", move_dmg: 35, type: "Normal" },
+      { move: "Rayo", move_dmg: 60, type: "Electric" },
+      { move: "Canto", move_dmg: 0, type: "Fairy" },
+      { move: "Pulso Cura", move_dmg: 0, type: "Psychic" },
     ],
   },
   {
@@ -1694,10 +1682,10 @@ const pokemons = [
     defense: 115,
     hp: 65,
     moves: [
-      { move: "Látigo Cepa", move_dmg: 45 },
-      { move: "Absorber", move_dmg: 20 },
-      { move: "Paralizador", move_dmg: 0 },
-      { move: "Bomba Germen", move_dmg: 55 },
+      { move: "Látigo Cepa", move_dmg: 45, type: "Grass" },
+      { move: "Absorber", move_dmg: 20, type: "Grass" },
+      { move: "Paralizador", move_dmg: 0, type: "Psychic" },
+      { move: "Bomba Germen", move_dmg: 55, type: "Grass" },
     ],
   },
   {
@@ -1709,10 +1697,10 @@ const pokemons = [
     defense: 80,
     hp: 105,
     moves: [
-      { move: "Golpe Furia", move_dmg: 45 },
-      { move: "Cabezazo", move_dmg: 40 },
-      { move: "Mega Puño", move_dmg: 80 },
-      { move: "Terremoto", move_dmg: 80 },
+      { move: "Golpe Furia", move_dmg: 45, type: "Normal" },
+      { move: "Cabezazo", move_dmg: 40, type: "Normal" },
+      { move: "Mega Puño", move_dmg: 80, type: "Fighting" },
+      { move: "Terremoto", move_dmg: 80, type: "Ground" },
     ],
   },
   {
@@ -1724,10 +1712,10 @@ const pokemons = [
     defense: 70,
     hp: 30,
     moves: [
-      { move: "Pistola Agua", move_dmg: 40 },
-      { move: "Burbuja", move_dmg: 40 },
-      { move: "Rayo Aurora", move_dmg: 65 },
-      { move: "Hidropulso", move_dmg: 50 },
+      { move: "Pistola Agua", move_dmg: 40, type: "Water" },
+      { move: "Burbuja", move_dmg: 40, type: "Water" },
+      { move: "Rayo Aurora", move_dmg: 65, type: "Ice" },
+      { move: "Hidropulso", move_dmg: 50, type: "Water" },
     ],
   },
   {
@@ -1739,10 +1727,10 @@ const pokemons = [
     defense: 95,
     hp: 55,
     moves: [
-      { move: "Burbuja", move_dmg: 40 },
-      { move: "Hidropulso", move_dmg: 50 },
-      { move: "Cabezazo", move_dmg: 40 },
-      { move: "Rayo Aurora", move_dmg: 65 },
+      { move: "Burbuja", move_dmg: 40, type: "Water" },
+      { move: "Hidropulso", move_dmg: 50, type: "Water" },
+      { move: "Cabezazo", move_dmg: 40, type: "Normal" },
+      { move: "Rayo Aurora", move_dmg: 65, type: "Ice" },
     ],
   },
   {
@@ -1754,10 +1742,10 @@ const pokemons = [
     defense: 60,
     hp: 45,
     moves: [
-      { move: "Pistola Agua", move_dmg: 40 },
-      { move: "Cornada", move_dmg: 50 },
-      { move: "Acua Jet", move_dmg: 40 },
-      { move: "Golpe Cuerpo", move_dmg: 60 },
+      { move: "Pistola Agua", move_dmg: 40, type: "Water" },
+      { move: "Cornada", move_dmg: 50, type: "Normal" },
+      { move: "Acua Jet", move_dmg: 40, type: "Water" },
+      { move: "Golpe Cuerpo", move_dmg: 60, type: "Normal" },
     ],
   },
   {
@@ -1769,10 +1757,10 @@ const pokemons = [
     defense: 65,
     hp: 80,
     moves: [
-      { move: "Cascada", move_dmg: 70 },
-      { move: "Cornada", move_dmg: 50 },
-      { move: "Rayo Aurora", move_dmg: 65 },
-      { move: "Acua Cola", move_dmg: 60 },
+      { move: "Cascada", move_dmg: 70, type: "Water" },
+      { move: "Cornada", move_dmg: 50, type: "Normal" },
+      { move: "Rayo Aurora", move_dmg: 65, type: "Ice" },
+      { move: "Acua Cola", move_dmg: 60, type: "Water" },
     ],
   },
   {
@@ -1784,10 +1772,10 @@ const pokemons = [
     defense: 55,
     hp: 30,
     moves: [
-      { move: "Pistola Agua", move_dmg: 40 },
-      { move: "Rayo Burbuja", move_dmg: 40 },
-      { move: "Rayo Aurora", move_dmg: 65 },
-      { move: "Hidropulso", move_dmg: 50 },
+      { move: "Pistola Agua", move_dmg: 40, type: "Water" },
+      { move: "Rayo Burbuja", move_dmg: 40, type: "Water" },
+      { move: "Rayo Aurora", move_dmg: 65, type: "Ice" },
+      { move: "Hidropulso", move_dmg: 50, type: "Water" },
     ],
   },
   {
@@ -1799,10 +1787,10 @@ const pokemons = [
     defense: 85,
     hp: 60,
     moves: [
-      { move: "Hidrobomba", move_dmg: 90 },
-      { move: "Rayo Aurora", move_dmg: 65 },
-      { move: "Psíquico", move_dmg: 90 },
-      { move: "Surf", move_dmg: 90 },
+      { move: "Hidrobomba", move_dmg: 90, type: "Water" },
+      { move: "Rayo Aurora", move_dmg: 65, type: "Ice" },
+      { move: "Psíquico", move_dmg: 90, type: "Psychic" },
+      { move: "Surf", move_dmg: 90, type: "Water" },
     ],
   },
   {
@@ -1814,10 +1802,10 @@ const pokemons = [
     defense: 65,
     hp: 40,
     moves: [
-      { move: "Confusión", move_dmg: 50 },
-      { move: "Psíquico", move_dmg: 90 },
-      { move: "Doble Rayo", move_dmg: 70 },
-      { move: "Pantalla de Luz", move_dmg: 0 },
+      { move: "Confusión", move_dmg: 50, type: "Psychic" },
+      { move: "Psíquico", move_dmg: 90, type: "Psychic" },
+      { move: "Doble Rayo", move_dmg: 70, type: "Electric" },
+      { move: "Pantalla de Luz", move_dmg: 0, type: "Psychic" },
     ],
   },
   {
@@ -1829,10 +1817,10 @@ const pokemons = [
     defense: 80,
     hp: 70,
     moves: [
-      { move: "Cuchillada", move_dmg: 60 },
-      { move: "Tajo Aéreo", move_dmg: 60 },
-      { move: "Danza Espada", move_dmg: 0 },
-      { move: "Golpe Furia", move_dmg: 45 },
+      { move: "Cuchillada", move_dmg: 60, type: "Normal" },
+      { move: "Tajo Aéreo", move_dmg: 60, type: "Flying" },
+      { move: "Danza Espada", move_dmg: 0, type: "Normal" },
+      { move: "Golpe Furia", move_dmg: 45, type: "Normal" },
     ],
   },
   {
@@ -1844,10 +1832,10 @@ const pokemons = [
     defense: 35,
     hp: 65,
     moves: [
-      { move: "Beso Amoroso", move_dmg: 0 },
-      { move: "Rayo Hielo", move_dmg: 65 },
-      { move: "Confusión", move_dmg: 50 },
-      { move: "Ventisca", move_dmg: 80 },
+      { move: "Beso Amoroso", move_dmg: 0, type: "Psychic" },
+      { move: "Rayo Hielo", move_dmg: 65, type: "Ice" },
+      { move: "Confusión", move_dmg: 50, type: "Psychic" },
+      { move: "Ventisca", move_dmg: 80, type: "Ice" },
     ],
   },
   {
@@ -1859,10 +1847,10 @@ const pokemons = [
     defense: 57,
     hp: 65,
     moves: [
-      { move: "Puño Trueno", move_dmg: 75 },
-      { move: "Impactrueno", move_dmg: 40 },
-      { move: "Rayo", move_dmg: 60 },
-      { move: "Pantalla de Luz", move_dmg: 0 },
+      { move: "Puño Trueno", move_dmg: 75, type: "Electric" },
+      { move: "Impactrueno", move_dmg: 40, type: "Electric" },
+      { move: "Rayo", move_dmg: 60, type: "Electric" },
+      { move: "Pantalla de Luz", move_dmg: 0, type: "Psychic" },
     ],
   },
   {
@@ -1874,10 +1862,10 @@ const pokemons = [
     defense: 57,
     hp: 65,
     moves: [
-      { move: "Ascuas", move_dmg: 40 },
-      { move: "Llamarada", move_dmg: 90 },
-      { move: "Puño Fuego", move_dmg: 75 },
-      { move: "Pantalla de Humo", move_dmg: 0 },
+      { move: "Ascuas", move_dmg: 40, type: "Fire" },
+      { move: "Llamarada", move_dmg: 90, type: "Fire" },
+      { move: "Puño Fuego", move_dmg: 75, type: "Fire" },
+      { move: "Pantalla de Humo", move_dmg: 0, type: "Normal" },
     ],
   },
   {
@@ -1889,10 +1877,10 @@ const pokemons = [
     defense: 100,
     hp: 65,
     moves: [
-      { move: "Golpe Mordaza", move_dmg: 50 },
-      { move: "Tijera X", move_dmg: 80 },
-      { move: "Cuchillada", move_dmg: 60 },
-      { move: "Derribo", move_dmg: 45 },
+      { move: "Golpe Mordaza", move_dmg: 50, type: "Normal" },
+      { move: "Tijera X", move_dmg: 80, type: "Bug" },
+      { move: "Cuchillada", move_dmg: 60, type: "Normal" },
+      { move: "Derribo", move_dmg: 45, type: "Normal" },
     ],
   },
   {
@@ -1904,10 +1892,10 @@ const pokemons = [
     defense: 95,
     hp: 75,
     moves: [
-      { move: "Embate", move_dmg: 50 },
-      { move: "Pisotón", move_dmg: 45 },
-      { move: "Golpe Cuerpo", move_dmg: 60 },
-      { move: "Terremoto", move_dmg: 80 },
+      { move: "Embate", move_dmg: 50, type: "Normal" },
+      { move: "Pisotón", move_dmg: 45, type: "Normal" },
+      { move: "Golpe Cuerpo", move_dmg: 60, type: "Normal" },
+      { move: "Terremoto", move_dmg: 80, type: "Ground" },
     ],
   },
   {
@@ -1918,7 +1906,7 @@ const pokemons = [
     attack: 10,
     defense: 55,
     hp: 20,
-    moves: [{ move: "Placaje", move_dmg: 20 }],
+    moves: [{ move: "Placaje", move_dmg: 20, type: "Normal" }],
   },
   {
     id: 130,
@@ -1929,10 +1917,10 @@ const pokemons = [
     defense: 79,
     hp: 95,
     moves: [
-      { move: "Mordisco", move_dmg: 60 },
-      { move: "Hidrobomba", move_dmg: 90 },
-      { move: "Ciclón", move_dmg: 40 },
-      { move: "Triturar", move_dmg: 80 },
+      { move: "Mordisco", move_dmg: 60, type: "Normal" },
+      { move: "Hidrobomba", move_dmg: 90, type: "Water" },
+      { move: "Ciclón", move_dmg: 40, type: "Flying" },
+      { move: "Triturar", move_dmg: 80, type: "Normal" },
     ],
   },
   {
@@ -1944,10 +1932,10 @@ const pokemons = [
     defense: 80,
     hp: 130,
     moves: [
-      { move: "Canto Helado", move_dmg: 65 },
-      { move: "Surf", move_dmg: 90 },
-      { move: "Cabezazo", move_dmg: 40 },
-      { move: "Ventisca", move_dmg: 80 },
+      { move: "Canto Helado", move_dmg: 65, type: "Ice" },
+      { move: "Surf", move_dmg: 90, type: "Water" },
+      { move: "Cabezazo", move_dmg: 40, type: "Normal" },
+      { move: "Ventisca", move_dmg: 80, type: "Ice" },
     ],
   },
   {
@@ -1962,6 +1950,7 @@ const pokemons = [
       {
         move: "Placaje",
         dmg: 20,
+        type: "Normal",
       },
     ],
   },
@@ -1974,10 +1963,10 @@ const pokemons = [
     defense: 50,
     hp: 55,
     moves: [
-      { move: "Ataque Rápido", move_dmg: 40 },
-      { move: "Mordisco", move_dmg: 60 },
-      { move: "Refugio", move_dmg: 0 },
-      { move: "Gruñido", move_dmg: 0 },
+      { move: "Ataque Rápido", move_dmg: 40, type: "Normal" },
+      { move: "Mordisco", move_dmg: 60, type: "Normal" },
+      { move: "Refugio", move_dmg: 0, type: "Normal" },
+      { move: "Gruñido", move_dmg: 0, type: "Normal" },
     ],
   },
   {
@@ -1989,10 +1978,10 @@ const pokemons = [
     defense: 60,
     hp: 130,
     moves: [
-      { move: "Pistola Agua", move_dmg: 40 },
-      { move: "Hidrobomba", move_dmg: 90 },
-      { move: "Rayo Aurora", move_dmg: 65 },
-      { move: "Danza Lluvia", move_dmg: 0 },
+      { move: "Pistola Agua", move_dmg: 40, type: "Water" },
+      { move: "Hidrobomba", move_dmg: 90, type: "Water" },
+      { move: "Rayo Aurora", move_dmg: 65, type: "Ice" },
+      { move: "Danza Lluvia", move_dmg: 0, type: "Water" },
     ],
   },
   {
@@ -2004,10 +1993,10 @@ const pokemons = [
     defense: 60,
     hp: 65,
     moves: [
-      { move: "Impactrueno", move_dmg: 40 },
-      { move: "Rayo", move_dmg: 60 },
-      { move: "Chispa", move_dmg: 50 },
-      { move: "Pantalla de Luz", move_dmg: 0 },
+      { move: "Impactrueno", move_dmg: 40, type: "Electric" },
+      { move: "Rayo", move_dmg: 60, type: "Electric" },
+      { move: "Chispa", move_dmg: 50, type: "Electric" },
+      { move: "Pantalla de Luz", move_dmg: 0, type: "Psychic" },
     ],
   },
   {
@@ -2019,10 +2008,10 @@ const pokemons = [
     defense: 60,
     hp: 65,
     moves: [
-      { move: "Ascuas", move_dmg: 40 },
-      { move: "Llamarada", move_dmg: 90 },
-      { move: "Giro Fuego", move_dmg: 35 },
-      { move: "Danza Llama", move_dmg: 50 },
+      { move: "Ascuas", move_dmg: 40, type: "Fire" },
+      { move: "Llamarada", move_dmg: 90, type: "Fire" },
+      { move: "Giro Fuego", move_dmg: 35, type: "Fire" },
+      { move: "Danza Llama", move_dmg: 50, type: "Fire" },
     ],
   },
   {
@@ -2034,10 +2023,10 @@ const pokemons = [
     defense: 70,
     hp: 65,
     moves: [
-      { move: "Conversion 2", move_dmg: 0 },
-      { move: "Rayo", move_dmg: 60 },
-      { move: "Psíquico", move_dmg: 90 },
-      { move: "Triataque", move_dmg: 80 },
+      { move: "Conversion 2", move_dmg: 0, type: "Normal" },
+      { move: "Rayo", move_dmg: 60, type: "Electric" },
+      { move: "Psíquico", move_dmg: 90, type: "Psychic" },
+      { move: "Triataque", move_dmg: 80, type: "Normal" },
     ],
   },
   {
@@ -2049,10 +2038,10 @@ const pokemons = [
     defense: 100,
     hp: 35,
     moves: [
-      { move: "Pistola Agua", move_dmg: 40 },
-      { move: "Rayo Aurora", move_dmg: 65 },
-      { move: "Bofetón Lodo", move_dmg: 20 },
-      { move: "Hidropulso", move_dmg: 50 },
+      { move: "Pistola Agua", move_dmg: 40, type: "Water" },
+      { move: "Rayo Aurora", move_dmg: 65, type: "Ice" },
+      { move: "Bofetón Lodo", move_dmg: 20, type: "Ground" },
+      { move: "Hidropulso", move_dmg: 50, type: "Water" },
     ],
   },
   {
@@ -2064,10 +2053,10 @@ const pokemons = [
     defense: 125,
     hp: 70,
     moves: [
-      { move: "Hidropulso", move_dmg: 50 },
-      { move: "Cascada", move_dmg: 70 },
-      { move: "Cabezazo", move_dmg: 40 },
-      { move: "Rayo Aurora", move_dmg: 65 },
+      { move: "Hidropulso", move_dmg: 50, type: "Water" },
+      { move: "Cascada", move_dmg: 70, type: "Water" },
+      { move: "Cabezazo", move_dmg: 40, type: "Normal" },
+      { move: "Rayo Aurora", move_dmg: 65, type: "Ice" },
     ],
   },
   {
@@ -2079,10 +2068,10 @@ const pokemons = [
     defense: 90,
     hp: 30,
     moves: [
-      { move: "Absorber", move_dmg: 20 },
-      { move: "Rayo Burbuja", move_dmg: 40 },
-      { move: "Golpe Cabeza", move_dmg: 40 },
-      { move: "Hidropulso", move_dmg: 50 },
+      { move: "Absorber", move_dmg: 20, type: "Grass" },
+      { move: "Rayo Burbuja", move_dmg: 40, type: "Water" },
+      { move: "Golpe Cabeza", move_dmg: 40, type: "Normal" },
+      { move: "Hidropulso", move_dmg: 50, type: "Water" },
     ],
   },
   {
@@ -2095,9 +2084,9 @@ const pokemons = [
     hp: 60,
     moves: [
       { move: "Corte", move_dmg: 50 },
-      { move: "Hidropulso", move_dmg: 50 },
-      { move: "Cuchillada", move_dmg: 60 },
-      { move: "Rayo Burbuja", move_dmg: 40 },
+      { move: "Hidropulso", move_dmg: 50, type: "Water" },
+      { move: "Cuchillada", move_dmg: 60, type: "Normal" },
+      { move: "Rayo Burbuja", move_dmg: 40, type: "Water" },
     ],
   },
   {
@@ -2109,10 +2098,10 @@ const pokemons = [
     defense: 65,
     hp: 80,
     moves: [
-      { move: "Mordisco", move_dmg: 60 },
-      { move: "Golpe Aéreo", move_dmg: 60 },
-      { move: "Roca Afilada", move_dmg: 50 },
-      { move: "Hiperrayo", move_dmg: 90 },
+      { move: "Mordisco", move_dmg: 60, type: "Normal" },
+      { move: "Golpe Aéreo", move_dmg: 60, type: "Flying" },
+      { move: "Roca Afilada", move_dmg: 50, type: "Rock" },
+      { move: "Hiperrayo", move_dmg: 90, type: "Electric" },
     ],
   },
   {
@@ -2124,10 +2113,10 @@ const pokemons = [
     defense: 65,
     hp: 160,
     moves: [
-      { move: "Golpe Cuerpo", move_dmg: 60 },
-      { move: "Descanso", move_dmg: 0 },
-      { move: "Pulso Dragón", move_dmg: 60 },
-      { move: "Pisotón", move_dmg: 45 },
+      { move: "Golpe Cuerpo", move_dmg: 60, type: "Normal" },
+      { move: "Descanso", move_dmg: 0, type: "Normal" },
+      { move: "Pulso Dragón", move_dmg: 60, type: "Dragon" },
+      { move: "Pisotón", move_dmg: 45, type: "Normal" },
     ],
   },
   {
@@ -2139,10 +2128,10 @@ const pokemons = [
     defense: 100,
     hp: 90,
     moves: [
-      { move: "Rayo Hielo", move_dmg: 65 },
-      { move: "Ventisca", move_dmg: 80 },
-      { move: "Agilidad", move_dmg: 0 },
-      { move: "Golpe Aéreo", move_dmg: 60 },
+      { move: "Rayo Hielo", move_dmg: 65, type: "Ice" },
+      { move: "Ventisca", move_dmg: 80, type: "Ice" },
+      { move: "Agilidad", move_dmg: 0, type: "Normal" },
+      { move: "Golpe Aéreo", move_dmg: 60, type: "Flying" },
     ],
   },
   {
@@ -2154,10 +2143,10 @@ const pokemons = [
     defense: 85,
     hp: 90,
     moves: [
-      { move: "Rayo", move_dmg: 60 },
-      { move: "Pico Taladro", move_dmg: 70 },
-      { move: "Trueno", move_dmg: 90 },
-      { move: "Pantalla de Luz", move_dmg: 0 },
+      { move: "Rayo", move_dmg: 60, type: "Electric" },
+      { move: "Pico Taladro", move_dmg: 70, type: "Flying" },
+      { move: "Trueno", move_dmg: 90, type: "Electric" },
+      { move: "Pantalla de Luz", move_dmg: 0, type: "Psychic" },
     ],
   },
   {
@@ -2169,10 +2158,10 @@ const pokemons = [
     defense: 90,
     hp: 90,
     moves: [
-      { move: "Llamarada", move_dmg: 90 },
-      { move: "Ascuas", move_dmg: 40 },
-      { move: "Ataque Ala", move_dmg: 60 },
-      { move: "Golpe Aéreo", move_dmg: 60 },
+      { move: "Llamarada", move_dmg: 90, type: "Fire" },
+      { move: "Ascuas", move_dmg: 40, type: "Fire" },
+      { move: "Ataque Ala", move_dmg: 60, type: "Flying" },
+      { move: "Golpe Aéreo", move_dmg: 60, type: "Flying" },
     ],
   },
   {
@@ -2184,10 +2173,10 @@ const pokemons = [
     defense: 45,
     hp: 41,
     moves: [
-      { move: "Ciclón", move_dmg: 40 },
-      { move: "Cola Dragón", move_dmg: 60 },
-      { move: "Rayo", move_dmg: 60 },
-      { move: "Pulso Dragón", move_dmg: 65 },
+      { move: "Ciclón", move_dmg: 40, type: "Flying" },
+      { move: "Cola Dragón", move_dmg: 60, type: "Dragon" },
+      { move: "Rayo", move_dmg: 60, type: "Electric" },
+      { move: "Pulso Dragón", move_dmg: 65, type: "Dragon" },
     ],
   },
   {
@@ -2199,10 +2188,10 @@ const pokemons = [
     defense: 65,
     hp: 61,
     moves: [
-      { move: "Ciclón", move_dmg: 40 },
-      { move: "Cola Dragón", move_dmg: 60 },
-      { move: "Rayo", move_dmg: 60 },
-      { move: "Pulso Dragón", move_dmg: 65 },
+      { move: "Ciclón", move_dmg: 40, type: "Flying" },
+      { move: "Cola Dragón", move_dmg: 60, type: "Dragon" },
+      { move: "Rayo", move_dmg: 60, type: "Electric" },
+      { move: "Pulso Dragón", move_dmg: 65, type: "Dragon" },
     ],
   },
   {
@@ -2214,10 +2203,10 @@ const pokemons = [
     defense: 95,
     hp: 91,
     moves: [
-      { move: "Puño Trueno", move_dmg: 75 },
-      { move: "Garra Dragón", move_dmg: 60 },
-      { move: "Vuelo", move_dmg: 70 },
-      { move: "Rayo Hielo", move_dmg: 70 },
+      { move: "Puño Trueno", move_dmg: 75, type: "Electric" },
+      { move: "Garra Dragón", move_dmg: 60, type: "Dragon" },
+      { move: "Vuelo", move_dmg: 70, type: "Flying" },
+      { move: "Rayo Hielo", move_dmg: 70, type: "Ice" },
     ],
   },
   {
@@ -2229,10 +2218,10 @@ const pokemons = [
     defense: 90,
     hp: 106,
     moves: [
-      { move: "Confusión", move_dmg: 50 },
-      { move: "Psíquico", move_dmg: 90 },
-      { move: "Rayo", move_dmg: 60 },
-      { move: "Onda Mental", move_dmg: 70 },
+      { move: "Confusión", move_dmg: 50, type: "Psychic" },
+      { move: "Psíquico", move_dmg: 90, type: "Psychic" },
+      { move: "Rayo", move_dmg: 60, type: "Electric" },
+      { move: "Onda Mental", move_dmg: 70, type: "Psychic" },
     ],
   },
   {
@@ -2244,10 +2233,10 @@ const pokemons = [
     defense: 100,
     hp: 100,
     moves: [
-      { move: "Confusión", move_dmg: 50 },
-      { move: "Mega Puño", move_dmg: 80 },
-      { move: "Psíquico", move_dmg: 90 },
-      { move: "Transformación", move_dmg: 0 },
+      { move: "Confusión", move_dmg: 50, type: "Psychic" },
+      { move: "Mega Puño", move_dmg: 80, type: "Fighting" },
+      { move: "Psíquico", move_dmg: 90, type: "Psychic" },
+      { move: "Transformación", move_dmg: 0, type: "Normal" },
     ],
   },
 ];
