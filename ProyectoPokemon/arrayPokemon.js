@@ -2083,7 +2083,7 @@ const pokemons = [
     defense: 105,
     hp: 60,
     moves: [
-      { move: "Corte", move_dmg: 50 },
+      { move: "Corte", move_dmg: 50 , type: "Normal" },
       { move: "Hidropulso", move_dmg: 50, type: "Water" },
       { move: "Cuchillada", move_dmg: 60, type: "Normal" },
       { move: "Rayo Burbuja", move_dmg: 40, type: "Water" },

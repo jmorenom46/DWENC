@@ -15,11 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
   list.classList.add("vs");
   PokemonJugadorCookie = getCookie();
   Jugador = JSON.parse(PokemonJugadorCookie);
-  console.log(Jugador);
   const imgPoke = Jugador.isShiny
     ? Jugador.img.replace("normal-sprite", "shiny-sprite")
     : Jugador.img;
-  console.log(imgPoke);
   const PokemonJugador = document.createElement("div");
   if (Jugador.isShiny) {
     PokemonJugador.classList.add("pokemonShiny");
@@ -62,11 +60,25 @@ function Continuar() {
   d.setTime(d.getTime() + 24 * 60 * 60 * 1000);
   const expires = "expires=" + d.toUTCString();
   const pokemonData = JSON.stringify(Maquina);
-  console.log(pokemonData);
   document.cookie = `PokemonMaquina=${pokemonData}; ${expires}; path=/`;
+  setMaxHealthJugadorCookie();
+  setMaxHealthMaquinaCookie();
   window.location.href = "../Combate/Combate.html";
 }
 
-function Mostrar(){
-  
+function setMaxHealthJugadorCookie() {
+  const d = new Date();
+  d.setTime(d.getTime() + 24 * 60 * 60 * 1000);
+  const expires = "expires=" + d.toUTCString();
+  const pokemonData = JSON.stringify(Jugador.hp);
+  document.cookie = `JugadorMhp=${pokemonData}; ${expires}; path=/`;
 }
+function setMaxHealthMaquinaCookie() {
+  const d = new Date();
+  d.setTime(d.getTime() + 24 * 60 * 60 * 1000);
+  const expires = "expires=" + d.toUTCString();
+  const pokemonData = JSON.stringify(Maquina.hp);
+  document.cookie = `MaquinaMhp=${pokemonData}; ${expires}; path=/`;
+}
+
+function Mostrar() {}

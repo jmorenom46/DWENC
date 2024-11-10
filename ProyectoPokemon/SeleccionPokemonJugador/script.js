@@ -74,7 +74,6 @@ function Aleatorio() {
   PokemonJ.classList.remove("pokemon");
   PokemonJ.classList.add("seleccionado");
   BtnContinuar.disabled = false;
-  console.log(PokemonJugador);
   if (PokemonAnterior != null) {
     const PokemonA = document.getElementById(PokemonAnterior);
     PokemonA.classList.remove("seleccionado");
@@ -87,7 +86,6 @@ function Continuar() {
   d.setTime(d.getTime() + 24 * 60 * 60 * 1000);
   const expires = "expires=" + d.toUTCString();
   const pokemonData = JSON.stringify(PokemonJugador);
-  console.log(pokemonData);
   document.cookie = `PokemonJugador=${pokemonData}; ${expires}; path=/`;
   window.location.href = "../SeleccionPokemonMaquina/Maquina.html";
 }
