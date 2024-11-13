@@ -1,0 +1,40 @@
+body{
+    text-align: center;
+}
+.contenedor{
+    display:flex;
+    margin: auto;
+}
+.contenido{
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 30%;
+    height: 20vh;
+    background-color: rgb(222, 222, 222);
+}
+.palabras{
+    display: flex;
+}
+.palabra{
+    margin: 2% auto 2% auto;
+    border: 1px solid black;
+    padding: 1%;
+    transition: ease 0.1s;
+}
+.palabra:hover{
+    transform: scale(1.1);
+    
+}
+button{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 1%;
+    transition: ease 0.1s;
+}
+button:hover{
+    transform: scale(1.1);
+}
+.dragged{
+    opacity: 0.5;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>DragAndDrop</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="contenido" ondrop="drop(event)" ondragover="allowDrop(event)" id="frutas">
+        <h3>Frutas</h3>
+      </div>
+      <div class="contenido" id="animales">
+        <h3>Animales</h3>
+      </div>
+      <div class="contenido" id="colores">
+        <h3>Colores</h3>
+      </div>
+    </div>
+    <div class="palabras">
+      <div class="palabra" ondragstart="drag(event)" id="Manzana">Manzana</div>
+      <div class="palabra" ondragstart="drag(event)" id="Platano">Platano</div>
+      <div class="palabra" ondragstart="drag(event)" id="Caballo">Caballo</div>
+      <div class="palabra" ondragstart="drag(event)" id="Serpiente">
+        Serpiente
+      </div>
+      <div class="palabra" ondragstart="drag(event)" id="Rojo">Rojo</div>
+      <div class="palabra" ondragstart="drag(event)" id="Azul">Azul</div>
+    </div>
+    <button onclick="validar()">Validar</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
