@@ -42,15 +42,11 @@ function validar() {
     let num = Elemento.indexOf(frutas.children[i].id);
     let val = Valor[num];
     if (val == "frutas") {
-      document
-        .getElementById(frutas.children[i].id)
-        .classList.remove("erroneo");
+      document.getElementById(frutas.children[i].id).classList.remove("erroneo");
       document.getElementById(frutas.children[i].id).classList.add("correcto");
       aciertos++;
     } else {
-      document
-        .getElementById(frutas.children[i].id)
-        .classList.remove("correcto");
+      document.getElementById(frutas.children[i].id).classList.remove("correcto");
       document.getElementById(frutas.children[i].id).classList.add("erroneo");
     }
   }
@@ -58,17 +54,11 @@ function validar() {
     let num = Elemento.indexOf(animales.children[i].id);
     let val = Valor[num];
     if (val == "animales") {
-      document
-        .getElementById(animales.children[i].id)
-        .classList.remove("erroneo");
-      document
-        .getElementById(animales.children[i].id)
-        .classList.add("correcto");
+      document.getElementById(animales.children[i].id).classList.remove("erroneo");
+      document.getElementById(animales.children[i].id).classList.add("correcto");
       aciertos++;
     } else {
-      document
-        .getElementById(animales.children[i].id)
-        .classList.remove("correcto");
+      document.getElementById(animales.children[i].id).classList.remove("correcto");
       document.getElementById(animales.children[i].id).classList.add("erroneo");
     }
   }
@@ -76,15 +66,11 @@ function validar() {
     let num = Elemento.indexOf(colores.children[i].id);
     let val = Valor[num];
     if (val == "colores") {
-      document
-        .getElementById(colores.children[i].id)
-        .classList.remove("erroneo");
+      document.getElementById(colores.children[i].id).classList.remove("erroneo");
       document.getElementById(colores.children[i].id).classList.add("correcto");
       aciertos++;
     } else {
-      document
-        .getElementById(colores.children[i].id)
-        .classList.remove("correcto");
+      document.getElementById(colores.children[i].id).classList.remove("correcto");
       document.getElementById(colores.children[i].id).classList.add("erroneo");
     }
   }

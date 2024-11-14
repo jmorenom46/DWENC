@@ -59,11 +59,13 @@ button:active{
 .erroneo{
     background-color: rgb(181, 59, 59);
     transition: ease 0.5s;
+    animation: temblor 0.2s ease;
 }
 
 .correcto{
     background-color: rgb(132, 195, 132);
     transition: ease 0.5s;
+    animation: acierto 0.5s ease;
 }
 .eliminar{
     animation: Eliminar 1s ease;
@@ -98,6 +100,36 @@ button:active{
         scale: 0;
     }
 }
+
+@keyframes temblor {
+    0% {
+      transform: translateX(-10px);  /* Mueve a la izquierda */
+    }
+    25% {
+      transform: translateX(10px);   /* Mueve a la derecha */
+    }
+    50% {
+      transform: translateX(-10px);  /* Mueve a la izquierda */
+    }
+    75% {
+      transform: translateX(10px);   /* Mueve a la derecha */
+    }
+    100% {
+      transform: translateX(0);     /* Regresa al centro */
+    }
+  }
+
+  @keyframes acierto {
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.3;
+    }
+    100%{
+        scale: 1;
+    }
+  }
 
 @keyframes Mostrar {
     0%{
