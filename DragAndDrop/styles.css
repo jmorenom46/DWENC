@@ -1,6 +1,10 @@
 body{
     text-align: center;
 }
+h3{
+    border-bottom: 1px solid black;
+    padding-bottom: 5%;
+}
 .contenedor{
     display:flex;
     margin: auto;
@@ -10,7 +14,8 @@ body{
     border: 1px solid black;
     border-radius: 20px;
     width: 30%;
-    height: 20vh;
+    min-height: 20vh;
+    height: auto;
     background-color: rgb(222, 222, 222);
 }
 .palabras{
@@ -25,6 +30,10 @@ body{
     transition: ease 0.1s;
     background-color: rgb(240, 240, 240);
 }
+.contenedor .palabra{
+    width: 70%;
+    border-radius: 20px;
+}
 .palabra:hover{
     transform: scale(1.1);
 }
@@ -33,10 +42,73 @@ button{
     border-radius: 20px;
     padding: 1%;
     transition: ease 0.1s;
+    margin-top: 2%;
 }
 button:hover{
     transform: scale(1.1);
 }
+button:active{
+    scale: 0.9;
+}
 .dragging{
     opacity: 0.5;
+}
+.dragging:active {
+    cursor: grabbing;
+}
+.erroneo{
+    background-color: rgb(181, 59, 59);
+    transition: ease 0.5s;
+}
+
+.correcto{
+    background-color: rgb(132, 195, 132);
+    transition: ease 0.5s;
+}
+.eliminar{
+    animation: Eliminar 1s ease;
+    opacity: 0;
+}
+.mostrar{
+    animation: Mostrar 0.8s ease;
+    opacity: 1;
+    margin-top: 5%;
+    font-size: 3em;
+}
+.ocultar{
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+}
+
+@keyframes Eliminar {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.8;
+        scale: 0.6;
+    }
+    75%{
+        opacity: 1;
+        scale: 1;
+    }
+    100%{
+        opacity: 0;
+        scale: 0;
+    }
+}
+
+@keyframes Mostrar {
+    0%{
+        opacity: 0;
+        scale: 0;
+    }
+    75%{
+        scale: 1.1;
+    }
+    100%{
+        opacity: 1;
+        scale: 1;
+    }
 }

@@ -19,16 +19,17 @@
       </div>
     </div>
     <div class="palabras">
-      <div class="palabra" draggable="true" ondragstart="drag(event)" id="Manzana">Manzana</div>
-      <div class="palabra" draggable="true" ondragstart="drag(event)" id="Platano">Platano</div>
-      <div class="palabra" draggable="true" ondragstart="drag(event)" id="Caballo">Caballo</div>
-      <div class="palabra" draggable="true" ondragstart="drag(event)" id="Serpiente">
+      <div class="palabra" draggable="true" ondragstart="drag(event)" ondragend="dragEnd(event)" ondragover="deniedDrop(event)" id="Manzana">Manzana</div>
+      <div class="palabra" draggable="true" ondragstart="drag(event)" ondragend="dragEnd(event)" id="Platano">Platano</div>
+      <div class="palabra" draggable="true" ondragstart="drag(event)" ondragend="dragEnd(event)" id="Caballo">Caballo</div>
+      <div class="palabra" draggable="true" ondragstart="drag(event)" ondragend="dragEnd(event)" id="Serpiente">
         Serpiente
       </div>
-      <div class="palabra" draggable="true" ondragstart="drag(event)" id="Rojo">Rojo</div>
-      <div class="palabra" draggable="true" ondragstart="drag(event)" id="Azul">Azul</div>
+      <div class="palabra" draggable="true" ondragstart="drag(event)" ondragend="dragEnd(event)" id="Rojo">Rojo</div>
+      <div class="palabra" draggable="true" ondragstart="drag(event)" ondragend="dragEnd(event)" id="Azul">Azul</div>
     </div>
-    <button onclick="validar()">Validar</button>
+    <p class="ocultar" id="resultado">¡Has colocado correctamente todas las palabras!</p>
+    <button id="validar" onclick="validar()">Validar</button>
 
     <script src="script.js"></script>
   </body>
